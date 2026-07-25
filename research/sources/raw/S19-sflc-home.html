@@ -1,0 +1,1138 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+    Internet Shutdowns Tracker by - SFLC.in
+</title>
+    <style>
+      @font-face {
+        font-family: "Atkinson";
+        src: url('/static/font/Atkinson-Hyperlegible-Regular-102.woff')
+          format("woff"); /* Pretty Modern Browsers */ /* Pretty Modern Browsers */
+        src: url('/static/font/Atkinson-Hyperlegible-Regular-102.woff')
+            format("woff"),
+          url('/static/font/Atkinson-Hyperlegible-Bold-102.eot')
+            format("embedded-opentype"),
+          /* IE6-IE8 */
+            url('/static/font/Atkinson-Hyperlegible-BoldItalic-102.eot')
+            format("embedded-opentype"),
+          /* IE6-IE8 */
+            url('/static/font/Atkinson-Hyperlegible-Italic-102.eot')
+            format("embedded-opentype"),
+          /* IE6-IE8 */
+            url('/static/font/Atkinson-Hyperlegible-Regular-102.eot')
+            format("embedded-opentype"),
+          /* IE6-IE8 */
+            url('/static/font/Atkinson-Hyperlegible-Bold-102a.woff2')
+            format("woff2"),
+          /* Pretty Modern Browsers */
+            url('/static/font/Atkinson-Hyperlegible-BoldItalic-102a.woff2')
+            format("woff2"),
+          /* Pretty Modern Browsers */
+            url('/static/font/Atkinson-Hyperlegible-Italic-102a.woff2')
+            format("woff2"),
+          /* Pretty Modern Browsers */
+            url('/static/font/Atkinson-Hyperlegible-Regular-102a.woff2')
+            format("woff2"),
+          /* Pretty Modern Browsers */
+            url('/static/font/Atkinson-Hyperlegible-Bold-102.woff')
+            format("woff"),
+          /* Pretty Modern Browsers */
+            url('/static/font/Atkinson-Hyperlegible-BoldItalic-102.woff')
+            format("woff"),
+          /* Pretty Modern Browsers */
+            url('/static/font/Atkinson-Hyperlegible-Italic-102.woff')
+            format("woff"),
+          /* Pretty Modern Browsers */
+            url('/static/font/Atkinson-Hyperlegible-Regular-102.woff')
+            format("woff"); /* Pretty Modern Browsers */
+      }
+    </style>
+
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="/static/images/site-icon.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/static/css/navbar.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/static/css/footer.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/static/component/spacing.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/static/component/font.css"
+    />
+
+    <!-- Matomo -->
+    <script type="text/javascript">
+      var _paq = window._paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+      (function () {
+        var u = "//analytics.softwarefreedom.in/";
+        _paq.push(["setTrackerUrl", u + "matomo.php"]);
+        _paq.push(["setSiteId", "1"]);
+        var d = document,
+          g = d.createElement("script"),
+          s = d.getElementsByTagName("script")[0];
+        g.type = "text/javascript";
+        g.async = true;
+        g.defer = true;
+        g.src = u + "matomo.js";
+        s.parentNode.insertBefore(g, s);
+      })();
+    </script>
+    <!-- End Matomo Code -->
+    
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='stylesheet' href="/static/css/map.css">
+    <link rel='stylesheet' type='text/css' href="/static/css/indexfile.css">
+    <link rel='stylesheet' type='text/css' href="/static/css/newcss/style.css">
+    <link rel='stylesheet' type='text/css' href="/static/css/map-loader.css">
+    <link rel='stylesheet' type='text/css' href="/static/css/twitter-widget-styles.css">
+
+    <link rel='stylesheet' type='text/css' href="/static/css/supporting_orgs.css">
+
+    <meta name="description" content="India's exclusive internet shutdowns tracker, striving to keep India online since 2010">
+<meta name="keywords" content="Internetshutdowns, tracker, internetshutdown tracker, sflc.in, internetshutdowns.in, shutdowns in india, internet blockage, internet ban in india">
+
+<!-- SOCIAL MEDIA META -->
+<meta property="og:description" content="India's exclusive internet shutdowns tracker, striving to keep India online since 2010">
+<meta property="og:image" content="/static/images/meta_img.png">
+<meta property="og:site_name" content="Internet Shutdowns Tracker by - SFLC.in">
+<meta property="og:title" content="Internet Shutdowns Tracker by - SFLC.in">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://internetshutdowns.in/">
+
+<!-- TWITTER META -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="Internet Shutdowns Tracker by - SFLC.in">
+<meta name="twitter:creator" content="@NetShutdowns">
+<meta name="twitter:title" content="Internet Shutdowns Tracker by - SFLC.in">
+<meta name="twitter:description" content="India's exclusive internet shutdowns tracker, striving to keep India online since 2010">
+<meta name="twitter:image" content="/static/images/meta_img.png">
+
+
+  </head>
+
+  <body>
+    
+      
+    <nav>
+      <input type="checkbox" name="" value="" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo" onclick="window.location = '/';"><img src="/static/images/sflc-tracker-logo.png"></label>
+      <ul class="nav-items-outer">
+        <li><a class="nav-items" href="/about/" >About</a></li>
+        <li><a class="nav-items" href="/static-page/lostvoices/" >Lost Voices</a></li>
+        <li><a class="nav-items" href="/static-page/trending-videos/" >Trending Videos</a></li>
+            <li class="nav-dropdown"><a class="nav-items" id="nav-dropdown" onclick="navDropdown('#special-cases')" >Special Cases <i class="fas fa-sort-down"></i></a>
+          <ul class="nav-dropdown-outer" id="special-cases">
+            <li><a class="nav-items" href="/static-page/jammu-kashmir/" >Jammu and Kashmir</a></li>
+            <li><a class="nav-items" href="/static-page/caa-protest/" >CAA Protest</a></li>
+            <li><a class="nav-items" href="/static-page/manipur/" >Manipur</a></li>
+          </ul>
+        </li>
+          <li><a class="nav-items" href="/news/" >In News</a></li>
+        <li class="nav-dropdown"><a class="nav-items" id="nav-dropdown" onclick="navDropdown('#resources')" >Resources <i class="fas fa-sort-down"></i></a>
+          <ul class="nav-dropdown-outer" id="resources">
+            <li><a class="nav-items" href="/blog/" >Blog</a></li>
+            <li><a class="nav-items" href="/resources/Policy_Tracker" >Policy Tracker</a></li>
+            <li><a class="nav-items" href="/resources/Research" >Research</a></li>
+            <li><a class="nav-items" href="/resources/Litigation" >Litigation</a></li>
+            <li><a class="nav-items" href="/resources/Conferences" >Conferences</a></li>
+
+          </ul>
+        </li>
+
+
+        <li><a class="nav-items" href="https://sflc.in/donate" >Donate</a></li>
+      </ul>
+      <section>
+
+      </section>
+    </nav>
+    
+    
+    
+    <!-- active shutdowns section-->
+    <div class="active-shutdowns" id="active-shutdowns">
+ <div class="active-shutdowns-inner" id="active-shutdowns-inner">
+
+ </div>
+     <div id="active-shutdowns-close-btn" onclick="$('#active-shutdowns').slideUp(200)">
+    X
+</div>
+    </div>
+
+        <!-- main section-->
+
+    <div class="main-body">
+        <!-- video trigger -->
+        <div class="yt-video" id="yt-video">
+            <div class="video-playback">
+                <div class="video-playback-inner">
+                    <div class="video-close-btn" id="close-btn"><span class="close-btn">X</span> Close</div>
+                    <div class="video-section">
+                        <iframe class="youtube-video" frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--
+        popup for test is blocked
+        -->
+        <div class="test-blocked" id="test-blocked">
+            <div class="test-blocked-inner">
+                <div class="test-blocked-container">
+                    <div class="test-blocked-header">Test what is being blocked on your internet! <span
+                            onclick="formClose('#test-blocked')">X</span></div>
+
+                    <div class="test-blocked-detail">
+                        We are trying to gather data about what is blocked across internet service providers in India.
+                        We
+                        need your help to do this.<br>
+                        <br>
+                        Tapping on the button below will open the OONI Probe app to run a series of tests. You need to
+                        have
+                        this app installed on your phone to run these tests. If you do not have the app installed, the
+                        button below will take you to the installation page.<br>
+                        <br>
+                        To help with the list of links that are tested when clicking this button, please write an email
+                        to
+                        mail@sflc.in.
+                    </div>
+                    <div class="test-blocked-bottom">
+                        <a class="test-blocked-btn" target="_blank"
+                           href="https://run.ooni.org/v2/10270">TEST
+                            MEDIA AND BLOGS WEBSITES</a>
+                        <a class="test-blocked-btn" target="_blank"
+                           href="https://run.ooni.org/v2/10271">TEST
+                            POLITICS AND HUMAN RIGHTS WEBSITES</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+<div id="popup-div"></div>
+            <!-- end video trigger -->
+            <!--first-row-->
+            <div class="first-row">
+                <div class="first-row-inner">
+                    <div class="first-col-1">
+                        <div class="first-col-1-inner">
+                            <div class="first-col-1-1">
+                                <div class="first-col-1-header">India's <span>Shutdown Numbers</span></div>
+                                <div class="shutdown-stats-block">
+                                    <div class="map-loader" id="loader-1"><img src="/static/images/loader.gif"></div>
+                                    <div class="shutdown-stats-inner">
+
+                                    </div>
+                                </div>
+                                <div class="lockdowns-count-block">
+                                    <div class="lockdowns-count-block-inner">
+                                        <div class="lockdown-count-row">
+                                            <div class="lockdown-count-col">Total Shutdowns</div>
+
+                                                <div class="lockdown-count-col">930</div>
+
+
+                                        </div>
+                                        <div class="lockdown-count-row">
+                                            <div class="lockdown-count-col">Most Shutdowns</div>
+
+                                            <div class="lockdown-count-col" id="most-shutdown-name-and-count"></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lockdown-stats-table-block">
+                                    <div class="lockdown-stats-table-block-inner">
+                                        <div class="stats-table" id="table">
+                                            
+                                        </div>
+                                        <div class="recent-shutdown-block" style="display: block!important;">
+                                            <div class="recent-shutdown-block-inner" id="render-recent-shutdown">
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pull-down-to-see-detail-block">Pull down to see detailed information</div>
+                                <p class="down-arrow-icon"><i class="fas fa-chevron-down pull-down-arrow"></i> <i
+                                        style="display: none;"
+                                        class="fas fa-angle-up"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="first-col-2" >
+                        <div class="map-loader loader-align-left" id="loader-2"><img src="/static/images/loader.gif"></div>
+
+                        <div class="first-col-2-inner">
+                            <div class="back-to-map" id="back_to_map"></div>
+                            <div class="let-the-net-work"
+                                 onclick="window.open('https://twitter.com/hashtag/letthenetwork?lang=en', '_blank');">
+                                <p>#LetTheNetWork</p><img src="/static/images/let-the-net-work.svg">
+                            </div>
+                            <div class="states-name-block">
+                                <div class="states-name-block-inner">
+                                    <div class="world-india-toggle"><span class="india-active"
+                                                                          id="india-active">India</span>
+
+                                        
+                                        
+                                        
+
+                                    </div>
+                                       <div class="state-name" id="state-name"></div>
+                                    <div class="shutdowns-in-state" id="totalCount"></div>
+
+                                </div>
+                            </div>
+                            <div id="year-filter-label" style="display:none; text-align:center; font-weight:bold; color: var(--sky-blue); margin-bottom: 6px; font-size: 14px; letter-spacing: 0.5px;"></div>
+                            <div class="india-map">
+                                <div class="first-col-2-map" id="svg">
+                                    <svg xmlns:osb="http://www.openswatchbook.org/uri/2009/osb" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" id="svg8" version="1.1" viewBox="0 0 109.328 129.11667"></svg>
+                                </div>
+                                <div class="map-legend">
+                                    <img src="/static/images/map/legend.svg" alt="legend" class="map-legend-img">
+                                </div>
+                            </div>
+                            <!-- <div class="world-map">
+                                Coming Soon...
+                            </div> -->
+                        </div>
+                    </div>
+                    <!-- Recent Shutdowns - now as third column to the right of map -->
+                    <div class="first-col-3">
+                        <div class="first-col-1-header">Recent <span>Shutdowns</span></div>
+                        <div class="recent-shutdown-block" id="recent-shutdown-block-2">
+                            <div class="recent-shutdown-block-inner" >
+                                
+                                    <div class="recent-shutdown-card">
+                                        <div class="recent-shutdown-card-date">July 24, 2026</div>
+                                        <div class="recent-shutdown-card-body">The State Government of Bihar has effectuated suspension of internet services along with blocking of …</div>
+                                        
+                                        <div class="recent-shutdown-card-source">Source: <i><a
+                                                href="/media/Muzaffarpur_IS_240726_compressed_d524e717-ebd6-43c0-bb3b-78cb53154075._c98c72a4-ac7c-4d5_5XLJV9M.pdf"><span id="recent-card-source" data-attr="[&#x27;Muzaffarpur&#x27;]"></span> - <b>Bihar</b> </a></i>
+                                        </div>
+                                        
+                                    </div>
+                                
+                                    <div class="recent-shutdown-card">
+                                        <div class="recent-shutdown-card-date">July 24, 2026</div>
+                                        <div class="recent-shutdown-card-body">The internet shutdown at and around 1.5 kms of Jantar Mantar, New Delhi was extended …</div>
+                                        
+                                        <div class="recent-shutdown-card-source">Source: <i><a
+                                                href="/media/Delhi_IS_240726_d3e84380-b32c-4627-b9bc-08fce1bb120d._d75893b0-0aba-480d-8847-55deef104399..pdf"><span id="recent-card-source" data-attr="[&#x27;Central Delhi&#x27;]"></span> - <b>NCT of Delhi</b> </a></i>
+                                        </div>
+                                        
+                                    </div>
+                                
+                                    <div class="recent-shutdown-card">
+                                        <div class="recent-shutdown-card-date">July 23, 2026</div>
+                                        <div class="recent-shutdown-card-body">The internet shutdown at and around 1.5 kms of Jantar Mantar, New Delhi from 8:00 …</div>
+                                        
+                                        <div class="recent-shutdown-card-source">Source: <i><a
+                                                href="/media/Delhi_IS_230726_f54f44a3-35b9-4ad3-81da-99461e986cf0._7153def7-a0db-4882-9512-9ba637f10751..pdf"><span id="recent-card-source" data-attr="[&#x27;Central Delhi&#x27;]"></span> - <b>NCT of Delhi</b> </a></i>
+                                        </div>
+                                        
+                                    </div>
+                                
+                                    <div class="recent-shutdown-card">
+                                        <div class="recent-shutdown-card-date">July 22, 2026</div>
+                                        <div class="recent-shutdown-card-body">Another internet shutdown has been reported in and around Jantar Mantar. An official government order …</div>
+                                        
+                                        <div class="recent-shutdown-card-source">Source: <i><a
+                                                href="/media/Delhi_220726_48702e61-96a4-4155-acc8-9169114b3a33._d580ae5f-9a23-4892-9933-c8b3cf61c30a..pdf"><span id="recent-card-source" data-attr="[&#x27;Central Delhi&#x27;]"></span> - <b>NCT of Delhi</b> </a></i>
+                                        </div>
+                                        
+                                    </div>
+                                
+                                    <div class="recent-shutdown-card">
+                                        <div class="recent-shutdown-card-date">July 20, 2026</div>
+                                        <div class="recent-shutdown-card-body">In response to the CJP's Chalo Sansad march from Jantar Mantar to Parliament, scheduled for …</div>
+                                        
+                                        <div class="recent-shutdown-card-source">Source: <i><a
+                                                href="/media/Delhi_20726_3bb41a3f-a24d-4663-b9ed-1e92ef1b95bf._2e40a16d-7dcd-4017-9dd0-0ce179ea00dd..pdf"><span id="recent-card-source" data-attr="[&#x27;Central Delhi&#x27;]"></span> - <b>NCT of Delhi</b> </a></i>
+                                        </div>
+                                        
+                                    </div>
+                                
+                                    <div class="recent-shutdown-card">
+                                        <div class="recent-shutdown-card-date">July 17, 2026</div>
+                                        <div class="recent-shutdown-card-body">Internet services were suspended across the entire Doda district of Jammu and Kashmir, including Doda …</div>
+                                        
+                                        <div class="recent-shutdown-card-source">Source: <i><a
+                                                href="/media/Doda_Kashmir_170726_07eb0187-4ee9-4f3c-9e54-29a9af33a8ec._d2da4cdf-5d1a-413e-a010-3d9510218ce9..pdf"><span id="recent-card-source" data-attr="[&#x27;Doda&#x27;]"></span> - <b>Jammu and Kashmir</b> </a></i>
+                                        </div>
+                                        
+                                    </div>
+                                
+                                    <div class="recent-shutdown-card">
+                                        <div class="recent-shutdown-card-date">July 8, 2026</div>
+                                        <div class="recent-shutdown-card-body">Internet Shutdown imposed across Gangapur City, Wazirpur, and Bamanwas in Rajasthan for 24 hours till …</div>
+                                        
+                                        <div class="recent-shutdown-card-source">Source: <i><a
+                                                href="/media/Rajasthan_04916450-33e0-4652-b42f-17fbbf721b2b..jpeg"><span id="recent-card-source" data-attr="Karauli, Sawai Madhopur"></span> - <b>Rajasthan</b> </a></i>
+                                        </div>
+                                        
+                                    </div>
+                                
+                                    <div class="recent-shutdown-card">
+                                        <div class="recent-shutdown-card-date">June 21, 2026</div>
+                                        <div class="recent-shutdown-card-body">According to news reports, Internet had been suspended in both Rudraprayag and Karnaprayag to curb …</div>
+                                        
+                                        <div class="recent-shutdown-card-source">Source: <i><a
+                                                href="/media/Uttrakhand_June_2026__d9b65640-c363-44ff-8333-e5c4855c900c._f0a0bb17-a249-497c-a52c-68af_FDyp78F.pdf"><span id="recent-card-source" data-attr="Chamoli"></span> - <b>Uttrakhand</b> </a></i>
+                                        </div>
+                                        
+                                    </div>
+                                
+                                    <div class="recent-shutdown-card">
+                                        <div class="recent-shutdown-card-date">June 7, 2026</div>
+                                        <div class="recent-shutdown-card-body">Internet shutdown imposed in Jaipur North and Jaipur East police districts for 24 hours ahead …</div>
+                                        
+                                        <div class="recent-shutdown-card-source">Source: <i><a
+                                                href="/media/Jaipur_2026_27f7a457-7f02-489b-887a-da9852e312cb..jpeg"><span id="recent-card-source" data-attr="Jaipur"></span> - <b>Rajasthan</b> </a></i>
+                                        </div>
+                                        
+                                    </div>
+                                
+                                    <div class="recent-shutdown-card">
+                                        <div class="recent-shutdown-card-date">May 30, 2026</div>
+                                        <div class="recent-shutdown-card-body">Internet Shutdown imposed in Faridabad, Haryana amid demolition drive.</div>
+                                        
+                                        <div class="recent-shutdown-card-source">Source: <i><a
+                                                href="/media/Haryana_Net_Shutdown_e29efa2a-8440-4444-af22-9fd113b24b5f._179c6e6b-2043-44c4-801d-badbd03389b9..pdf"><span id="recent-card-source" data-attr="[&#x27;Faridabad&#x27;]"></span> - <b>Haryana</b> </a></i>
+                                        </div>
+                                        
+                                    </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of first container -->
+            <div class="spacing-2"></div>
+            <div class="text-below-map"><b>Disclaimer</b> - Please note that in case you notice any
+                discrepancies in the number of shutdowns at a state level and district level, it is
+                due
+                to the fact that a single order of shutdown which will be counted as one may be
+                imposed
+                in multiple districts, thereby increasing the district count but keeping the state
+                count
+                the same.
+            </div>
+            <div class="spacing-4"></div>
+            <div class="second-continer">
+                <div class="second-cotainer-col-1">
+                    <p class="second-container-txt-1 txt-center cursor" onclick="formOpen('#test-blocked')">Test what is
+                        being <b>BLOCKED</b> on your internet</p>
+                </div>
+                <div class="second-cotainer-col-2">
+                    <p class="second-container-txt-2 txt-center cursor" onclick="formOpen('#contact-form-2')"
+                       id="form-open-btn-2">Share your experience</p>
+                </div>
+                <div class="second-cotainer-col-3">
+                    <p class="second-container-txt-3 txt-center cursor" onclick="formOpen('#contact-form')"
+                       id="form-open-btn">Report a shutdown</p>
+                </div>
+            </div>
+            <!-- end of second-container -->
+
+            <!-- form for share experience and report shutdown -->
+
+            
+            <div class="contact-form" id="contact-form" style="display: none">
+
+                <div class="contact-form-inner">
+                    <div class="contact-form-header">
+                        <div class="contact-form-heading">Report a problem</div>
+                        <div class="form-close-btn">
+                            <p id="form-close-btn" onclick="formClose('#contact-form')">X</p>
+                        </div>
+                    </div>
+                    <form id="report-shutdown">
+                        <!-- <div class="spacing-1"></div> -->
+
+                        <div id="form-report-shutdown-inner">
+                            <div class="form-fields">
+                                <label for="form-state">State :</label><br>
+                                <input id="form-state" name="form-state" type="text" required>
+                            </div>
+                            <div class="form-fields">
+                                <label for="form-district">District :</label><br>
+                                <input id="form-district" name="form-district" type="text" required>
+                            </div>
+                            <div class="form-fields">
+                                <label for="form-locality">Locality :</label><br>
+                                <input id="form-locality" name="form-locality" type="text" required>
+                            </div>
+                            <div class="form-fields">
+                                <label for="form-date">Date :<span class="smallLabels">(Start Date of Internetshutdowns)</span></label><br>
+                                <input id="form-date" name="form-date" type="date" required>
+                            </div>
+                            <div class="form-fields">
+                                <label for="form-description">Description :</label><br>
+                                <textarea id="form-description" name="form-description" type="text" required></textarea>
+                            </div>
+                            <div class="form-fields">
+                                <label for="form-source">Source :<span class="smallLabels">(Multiple sources can be added using seperated comma ','.)</span></label><br>
+                                <input id="form-source" name="form-source" type="text" required>
+                            </div>
+                            <div class="form-fields">
+                                <label for="form-source">E-mail : <span class="smallLabels">(Optional. Will not be published.)</span></label><br>
+                                <input id="form-email" name="form-email" type="email" required>
+                            </div>
+                        </div>
+                        <div class="form-fields">
+                            <span class="form-close-btn-2" onclick="formClose('#contact-form')">Close</span>
+                            <button class="form-sbumit-btn" id="report-shutdown-submit" type="submit">Submit</button>
+                        </div>
+                        <div class="form-fields" id="submission-msg-2"></div>
+                        <div class="spacing-5"></div>
+                    </form>
+
+                </div>
+            </div>
+
+            
+            <div class="contact-form" id="contact-form-2" style="display: none">
+
+                <div class="contact-form-inner">
+                    <div class="contact-form-header">
+                        <div class="contact-form-heading">Share your experience</div>
+                        <div class="form-close-btn">
+                            <p id="form-close-btn-2" onclick="formClose('#contact-form-2')">X</p>
+                        </div>
+                    </div>
+                    <form id="shareExperience">
+                        <!-- <div class="spacing-1"></div> -->
+
+
+                        <div class="form-share-experience-inner" id="form-share-experience-inner">
+                            <div class="form-content">
+                                You can help us address the issue of Internet shutdowns! If you have ever experienced a
+                                shutdown or know someone who has, share the experience with us. What aspects of your
+                                life
+                                did it affect, and in what ways did it make things difficult?<br>
+
+                                Please note that we may publish your input on our website and/or on other media to
+                                highlight
+                                the impact it has on the lives of the people. We may make minimal content edits (like
+                                spelling or grammar), but the substance will remain unchanged. If you'd rather that we
+                                didn't attribute your input to you, please enter "Anonymous" as your name.
+                                <br>
+                                You can view our Privacy Policy <a
+                                    href="/privacy-policy/" style="color: var(--sky-blue)">here</a>.
+
+                                <br>
+                                Please note that fields marked * are mandatory.
+                                <br>
+                                You can also email us at mail@sflc.in with your experience
+
+                            </div>
+                            <div class="form-fields">
+                                <label for="form-state">Name :<span class="smallLabels">(You may choose to remain anonymous. However, a name gives more credibility to the story.)</span></label><br>
+                                <input id="form-state" name="form-name" type="text" required>
+                            </div>
+                            <div class="form-fields">
+                                <label for="form-locality">Locality :<span class="smallLabels"> (This is the city/State where the Internet was shutdown.)</span></label><br>
+                                <input id="form-locality" name="form-locality" type="text" required>
+                            </div>
+                            <div class="form-fields">
+                                <label for="form-date">Date :<span class="smallLabels">(When was the Internet shut down in your area?)</span></label><br>
+                                <input id="form-date" name="form-date" type="date" required>
+                            </div>
+                            <div class="form-fields">
+                                <label for="form-experience">Experience :<span class="smallLabels">(What impact did the shutdown have on your life? You can share the challenges and difficulties that you had to face due to shutdown or the losses incurred during that period.)</span></label><br>
+                                <textarea id="form-experience" name="form-experience" type="text" required></textarea>
+                            </div>
+                            <div class="form-fields">
+                                <label for="form-detail">Other Details: <span class="smallLabels">(You may choose to provide other details like your age, gender, profession, duration of shutdown or any other detail which might help us understand and highlight your story better)</span></label><br>
+                                <input id="form-detail" name="form-detail" type="text" required>
+                            </div>
+                            <div class="form-fields">
+                                <label for="form-source">E-mail : <span class="smallLabels">(We will not share or publish this, but we may use it to contact you.)</span></label><br>
+                                <input id="form-email" name="form-email" type="email" required>
+                            </div>
+                        </div>
+                        <div class="form-fields">
+                            <span class="form-close-btn-2" onclick="formClose('#contact-form-2')" id="form-close-btn-2">Close</span>
+                            <button class="form-sbumit-btn" id="shareExperienceSubmit" type="submit">Submit</button>
+                        </div>
+                        <div class="form-fields" id="submission-msg"></div>
+                        <div class="spacing-5"></div>
+                    </form>
+
+                </div>
+            </div>
+
+            <!-- end of forms -->
+
+<!-- shutdown video container for now it was not necessary so removed and added a template called shutdownVideos.html under map/shutdownVideos.html you can import it here if you want it anytime in the future. -->
+
+            <!-- fifth container start (Trending - now first) -->
+            <div class="spacing-2"></div>
+            <div class="fifth-container-1">
+                <img class="fifth-container-header-img" src="/static/images/map/01.svg">
+                <p class="fifth-container-header txt-right bold-800">Trending&nbsp; </p>
+            </div>
+
+            
+            <div class="spacing-5"></div>
+            <div class="custom-container">
+                <div class="fifth-container">
+                    <div class="fifth-inner-container">
+                        <div class="fifth-col-1">
+                            <div class="fifth-col-1-header">Latest Tweet from @NetShutdowns</div>
+                            <div class="fifth-col-1-inner twitter-widget-container" id="twitter-container-main">
+                                <!-- Primary: Try to load latest tweet via timeline -->
+                                 
+                                 
+                                 
+
+
+                                <!-- Fallback: Static embedded tweet (always visible as backup) -->
+
+                                
+
+                                <!-- Dynamic Tweets from Backend -->
+                                <div id="dynamic-tweets-container">
+                                    
+                                        
+                                            <div class="tweet-card" style="margin-bottom: 20px; padding: 15px; border: 1px solid #e1e8ed; border-radius: 12px; background: #ffffff;">
+                                                <div class="tweet-text" style="font-size: 15px; line-height: 1.5; color: #14171a; margin-bottom: 10px;">
+                                                    <a href="https://twitter.com/NetShutdowns" target="_blank" style="text-decoration: none; color: #14171a;">
+                                                        Unable to load tweets at the moment. Please visit @NetShutdowns on X for the latest updates.
+                                                    </a>
+                                                </div>
+                                                
+                                                <div class="tweet-meta" style="font-size: 13px; color: #657786;">
+                                                    <span>@NetShutdowns</span> • <span>July 25, 2026</span>
+                                                </div>
+                                            </div>
+                                        
+                                    
+                                </div>
+
+                                
+                                <div class="twitter-read-more-section">
+                                    <a href="https://twitter.com/NetShutdowns" target="_blank" class="twitter-read-more-btn">
+                                        Read More Tweets
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fifth-col-2">
+                            <div class="fifth-col-2-inner" id="trendingVideosContainer">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="spacing-5"></div>
+            <!-- ending of fifth container -->
+
+            <!-- Trends In Shutdowns (now second) -->
+            <!-- <div class="sixth-container-header">
+                 by <b>@NetShutdowns</b>
+             </div>
+
+               <div class="spacing-5"></div>
+             <div class="sixth-container-header-2">
+                 <b>Trends</b> in Shutdowns
+             </div>
+             -->
+            <div class="spacing-4 hide-in-mobile"></div>
+            <div class="forth-container-1">
+                <img class="forth-container-header-img" src="/static/images/map/02.svg">
+                <p class="forth-container-header font-31px txt-left bold-800">&nbsp; &nbsp;Trends In Shutdowns</p>
+            </div>
+            <div class="spacing-6"></div>
+            <div class="sixth-container">
+                <div class="sixth-container-overlay">
+                    <div class="sixth-container-overlay-left" onclick="overlayLeft()" id="overlay-left"></div>
+                    <div class="sixth-container-overlay-right" onclick="overlayRight()" id="overlay-right"></div>
+                </div>
+                <div class="sixth-container-inner" id="sixth-container-inner">
+                    <div class="sixth-col-1">
+                        <div class="sixth-col-image">
+                            <div class="sixth-col-img" id="line-chart"></div>
+                        </div>
+                        <div class="sixth-col-text">
+                            <p class="sixth-col-text-header"  id="graph-1-title"></p>
+                            <p class="sixth-col-text-detail" id="graph-1-desc"></p>
+                        </div>
+                    </div>
+                    <div class="sixth-col-1">
+                        <div class="sixth-col-image">
+                            <div id="linec" class="sixth-col-img"></div>
+                        </div>
+                        <div class="sixth-col-text">
+                            <p class="sixth-col-text-header" id="graph-3-title"></p>
+                            <p class="sixth-col-text-detail" id="graph-3-desc"></p>
+                        </div>
+                    </div>
+                    <div class="sixth-col-1">
+                        <div class="sixth-col-image">
+                            <div id="area-chart" class="sixth-col-img"></div>
+                        </div>
+                        <div class="sixth-col-text">
+                            <p class="sixth-col-text-header" id="graph-2-title"></p>
+                            <p class="sixth-col-text-detail" id="graph-2-desc"></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div>
+
+            </div>
+            <!-- end of sixth col -->
+
+            <!-- Longest Shutdowns (now third/last) -->
+            <div class="custom-container" id="hide-shutdown-heading">
+                <div class="spacing-2 hide-in-mobile"></div>
+                <div class="forth-container-1">
+                    <img class="forth-container-header-img" src="/static/images/map/03.svg">
+                    <p class="forth-container-header txt-left bold-800">Longest Shutdowns</p>
+                </div>
+            </div>
+            <div class="spacing-4" id="hide-shutdown-spacing-2"></div>
+            <!-- starting of forth-container -->
+            <div class="custom-container" id="hide-shutdown-container">
+                <div class="forth-container">
+                    <div class="forth-container-inner">
+                        
+                            <div class="forth-container-row">
+                                <div class="forth-container-col-1">
+                                    <p class="forth-container-col-1-txt-1">552 days</p>
+                                    <p class="forth-container-col-1-txt-2"><b>Kashmir,</b> Jammu and Kashmir
+                                    </p>
+                                    <p class="forth-container-col-1-txt-3">Aug. 4, 2019
+                                        - Feb. 6, 2021</p>
+                                </div>
+                                <div class="forth-container-col-2">
+                                    <div class="forth-container-divider"></div>
+                                    <div class="forth-container-circle"></div>
+                                </div>
+                                <div class="forth-container-col-3">
+                                    <div class="forth-container-col-3-txt-1">
+                                    <p class="unhidden-txt"
+                                       id="ls1">An internet shutdown was imposed in the evening of 4th August 2019, when Article 370 of the Constitution was abrogated by the Parliament of India. It was passed by the Presidential order number 272 dated August 5, 2019. The State of Jammu and Kashmir was bifurcated into the Union Territories of Jammu & Kashmir and Ladakh. This was a preventive …</p>
+                                    <p class="hidden-txt" id="ls1h"
+                                       style="display: none">An internet shutdown was imposed in the evening of 4th August 2019, when Article 370 of the Constitution was abrogated by the Parliament of India. It was passed by the Presidential order number 272 dated August 5, 2019. The State of Jammu and Kashmir was bifurcated into the Union Territories of Jammu & Kashmir and Ladakh. This was a preventive shutdown imposed in the state which is yet to be lifted entirely. The shutdown in Kargil was lifted on December 2019 but continued in other parts of the union territory. The beginning of the communication blockade saw the restriction of landlines as well as mobile services. The ban on landlines was lifted but suspension of mobile internet continued in the valley. In January 2020, 2G services were restored in the valley for verified users. Only whitelisted websites could be accessed and social media remains prohibited. The services were snapped again the same day on account of security concerns for Republic Day. 2G services for whitelisted websites were later restored in January 2020 at 4 PM. On March 2020, a new order was passed by the administration of J&K which stated that while the whitelist was to be removed, the internet could only be accessed using 2G on verified SIMs. Post that, 4G connection was available only in 2 districts Ganderbal and Udampur The erstwhile state regained 4G connection on February 6th 2021 after 552 days of no to low internet.</p>
+                                    </div>
+                                    <p class="forth-container-col-3-txt-2 read-more-btn"
+                                       onclick="ToggleFaq('ls1', this)">Read more</p>
+                                </div>
+                            </div>
+                        
+                            <div class="forth-container-row">
+                                <div class="forth-container-col-1">
+                                    <p class="forth-container-col-1-txt-1">200 days</p>
+                                    <p class="forth-container-col-1-txt-2"><b>Throughout the State,</b> Manipur
+                                    </p>
+                                    <p class="forth-container-col-1-txt-3">April 27, 2023
+                                        - Oct. 18, 2023</p>
+                                </div>
+                                <div class="forth-container-col-2">
+                                    <div class="forth-container-divider"></div>
+                                    <div class="forth-container-circle"></div>
+                                </div>
+                                <div class="forth-container-col-3">
+                                    <div class="forth-container-col-3-txt-1">
+                                    <p class="unhidden-txt"
+                                       id="ls5">An internet shutdown was imposed in the entire State of Manipur on May 3rd, 2023. This shutdown was an extension from two districts Churachandpur and Pherzawl, where internet shutdown had already begun on April 28th, 2023. The Statewide Shutdown was enforced after violence broke out following communal clashes in the state of Manipur. The internet shutdown in Manipur is the …</p>
+                                    <p class="hidden-txt" id="ls5h"
+                                       style="display: none">An internet shutdown was imposed in the entire State of Manipur on May 3rd, 2023. This shutdown was an extension from two districts Churachandpur and Pherzawl, where internet shutdown had already begun on April 28th, 2023. The Statewide Shutdown was enforced after violence broke out following communal clashes in the state of Manipur. The internet shutdown in Manipur is the longest North-East as seen so far and it is also the longest lockdown in the year 2023, making it the longest shutdown outside of the State of Kashmir. At present, Manipur has been under internet shutdown for more than 200 days, with the blanket shutdown lifting only for 3 days on September 23rd, 2023, and for restrictions being placed on mobile internet and communication services again on September 26th, 2023. While the broadband services were allowed, more than 96% of the population did not have access to the Internet as less than 4% of the population in the country has access to broadband services. The government in its attempt to justify mass internet shutdown, expressed that the shutdowns are put in place “to thwart the design and activities of anti-national and anti-social elements and to maintain peace and communal harmony… by stopping the spread of misinformation and false rumours through various social media platforms…”.
+
+In the interest of public good, the Hon’ble High Court of Manipur finally intervened after a spate of hearings, and through its order dated July 7th, 2023, directed the Government of Manipur to restore the internet in a limited fashion. The Court directed the Government to reinstate Internet service through broadband connections while keeping certain safeguards in place. The order further directed the State Government to conduct a survey and whitelist select new mobile numbers to restore communication services. As of December 3rd, 2023, the Government of Manipur brought much needed relief to the affected citizens by revoking the internet shutdown orders in the areas not affected by violence. The order also stated that going forward, the internet shutdown will take place only in the areas directly affected by violence. This order came as a sigh of relief to the people of Manipur were not only facing difficulties in connecting to the rest of the world but were also pushed back half a century on several financial and health concerns in this digital age. As of December 3rd, 2023, the state of Manipur has come out of complete internet darkness and has put an end to the longest internet shutdown to take place in the year 2023. 
+
+To read more about the Internet Shutdown Crisis in Manipur, please follow the link to read our explainer blog. 
+https://internetshutdowns.in/blog/trend-long-internet-shutdowns-india-manipur-crisis/</p>
+                                    </div>
+                                    <p class="forth-container-col-3-txt-2 read-more-btn"
+                                       onclick="ToggleFaq('ls5', this)">Read more</p>
+                                </div>
+                            </div>
+                        
+                            <div class="forth-container-row">
+                                <div class="forth-container-col-1">
+                                    <p class="forth-container-col-1-txt-1">145 days</p>
+                                    <p class="forth-container-col-1-txt-2"><b>Kargil,</b> Ladakh
+                                    </p>
+                                    <p class="forth-container-col-1-txt-3">Aug. 4, 2019
+                                        - Dec. 27, 2019</p>
+                                </div>
+                                <div class="forth-container-col-2">
+                                    <div class="forth-container-divider"></div>
+                                    <div class="forth-container-circle"></div>
+                                </div>
+                                <div class="forth-container-col-3">
+                                    <div class="forth-container-col-3-txt-1">
+                                    <p class="unhidden-txt"
+                                       id="ls2">Kargil district of Ladakh faced a shutdown of 145 days, which was imposed since August 2019 on the erstwhile State of Jammu and Kashmir. The shutdown was imposed alongside the suspension of all landlines, mobiles and SMS communication as a preventive measure in the wake of the abrogation of article 370. It was lifted on December 2019 in the district, …</p>
+                                    <p class="hidden-txt" id="ls2h"
+                                       style="display: none">Kargil district of Ladakh faced a shutdown of 145 days, which was imposed since August 2019 on the erstwhile State of Jammu and Kashmir. The shutdown was imposed alongside the suspension of all landlines, mobiles and SMS communication as a preventive measure in the wake of the abrogation of article 370. It was lifted on December 2019 in the district, but it continues in other parts of the erstwhile State.</p>
+                                    </div>
+                                    <p class="forth-container-col-3-txt-2 read-more-btn"
+                                       onclick="ToggleFaq('ls2', this)">Read more</p>
+                                </div>
+                            </div>
+                        
+
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- forth container end -->
+            <div class="spacing-3"></div>
+
+                <div class="spacing-7 dec-3"></div>
+                <div class="seventh-container">
+                    <div class="seventh-container-inner">
+                        <div class="seventh-heading">Supporting Organizations</div>
+                        <div class="seventh-partners">
+                            <!-- <div class="seventh-partners-col"><img src="./assets/images/partners/logo1.png"></div>
+                            <div class="seventh-partners-col"><img src="./assets/images/partners/logo2.png"></div>
+                            <div class="seventh-partners-col"><img src="./assets/images/partners/logo3.png"></div>
+                            <div class="seventh-partners-col"><img src="./assets/images/partners/logo4.png"></div> -->
+                            <div class="partners-container">
+                                <div class="partners-inner" id="partners-inner">
+                                    <div class="partners-columns">
+                                        <div onclick='window.open("https://www.defindia.org/", "_blank");' class="partners-image"
+                                             style="background-image: url('https://cdn.sflc.in/map-design/assets/images/partners/logo1.png');"></div>
+                                    </div>
+                                    <div class="partners-columns">
+                                        <div onclick='window.open("https://internetdemocracy.in/", "_blank");' class="partners-image"
+                                             style="background-image: url('https://cdn.sflc.in/map-design/assets/images/partners/logo2.png');"></div>
+                                    </div>
+                                    <div class="partners-columns">
+                                        <div onclick='window.open("https://itforchange.net/", "_blank");' class="partners-image"
+                                             style="background-image: url('https://cdn.sflc.in/map-design/assets/images/partners/logo3.png');"></div>
+                                    </div>
+                                    <div class="partners-columns">
+                                        <div onclick='window.open("https://sflc.in/", "_blank");' class="partners-image"
+                                             style="background-image: url('https://cdn.sflc.in/map-design/assets/images/partners/logo4.png');"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="spacing-7 dec-3"></div>
+                <div class="initiative-col">
+                    <div class="initiative-heading">An Initiative of SFLC.in</div>
+                    <div class="initiative-detail">
+                        SFLC.IN is a donor supported legal services organisation that brings together lawyers, policy
+                        analysts,
+                        technologists, and students to protect freedom
+                        in the digital world. SFLC.IN promotes innovation and open access to knowledge by helping
+                        developers
+                        make great Free and Open Source Software,
+                        protect privacy and civil liberties for citizens in the digital world by educating and providing
+                        free
+                        legal advice and help policy makers make informed
+                        and just decisions with the use and adoption of technology. SFLC.IN is a society registered
+                        under
+                        the
+                        Societies Registration Act, 1860, operating
+                        all over India.
+
+                    </div>
+                </div>
+
+            <div class="second-chart"></div>
+            <div id="chart-2-2"></div>
+            <div class="spacing-7"></div>
+
+            <!-- jquery script -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+            <!--scripts-->
+
+  <script>
+var yearWiseData = () => {
+
+const apiUrl = '/get-shutdowns-year/';
+
+// Creating a new XMLHttpRequest object
+const xhr = new XMLHttpRequest();
+
+// Opening a synchronous GET request to the API endpoint
+xhr.open('GET', apiUrl, false); // The third parameter (false) makes it synchronous
+
+try {
+  // Sending the request
+  xhr.send();
+
+  // Checking if the request was successful (status code 200)
+  if (xhr.status === 200) {
+    // Parsing the JSON response
+    const data = JSON.parse(xhr.responseText);
+
+    // Process the data received from the API
+    yearWiseData= data.msg
+  } else {
+    // Handling non-successful status codes
+    console.error(`HTTP error! Status: ${xhr.status}`);
+  }
+} catch (error) {
+  // Handling errors that occurred during the request
+  console.error('Error during API call:', error);
+}
+
+}
+yearWiseData()
+
+            </script>
+
+            <!--map scripts-->
+
+            <script src="https://cdn.jsdelivr.net/npm/underscore@1.12.0/underscore-min.js"></script>
+         <script async defer type="text/javascript" src="/static/newscript/yearwiseshutdowns.js"></script>
+
+            <script async type="text/javascript" src="/static/javascript/SVG-map/pikupColor.js"></script>
+            <script type="text/javascript" src="/static/newscript/india.js"></script>
+            <script type="text/javascript" src="/static/newscript/main.js"></script>
+            <script type="text/javascript" src="/static/javascript/SVG-map/mapPlot.js"></script>
+            <script defer async="async" type="text/javascript" src="/static/newscript/allinone.js"></script>
+            <script async="async" type="text/javascript" src="/static/newscript/activeshutdowns.js"></script>
+            <script async type="text/javascript" src="/static/newscript/trendingVideos.js"></script>
+     <script async type="text/javascript" src="/static/newscript/carousel.js"></script>
+     <script async type="text/javascript" src="/static/newscript/popup.js"></script>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <script>
+                // Enhanced Twitter widget handler with better fallback
+                (function() {
+                    console.log('Initializing Twitter widget system...');
+                    
+                    var timelineContainer = document.getElementById('twitter-timeline-container');
+                    var staticContainer = document.getElementById('static-tweet-container');
+                    var timelineLoaded = false;
+                    
+                    function initTwitterWidgets() {
+                        if (typeof twttr !== 'undefined' && twttr.widgets) {
+                            console.log('Twitter widgets API available');
+                            
+                            // Always render the static tweet first as immediate fallback
+                            twttr.widgets.load(staticContainer);
+                            console.log('Static tweet loaded as fallback');
+                            
+                            // Try to load timeline (latest tweet)
+                            twttr.widgets.load(timelineContainer).then(function() {
+                                console.log('Timeline widget loading initiated');
+                                
+                                // Check after 8 seconds if timeline loaded successfully
+                                setTimeout(function() {
+                                    var timelineIframe = timelineContainer.querySelector('iframe');
+                                    if (timelineIframe && timelineIframe.offsetHeight > 100) {
+                                        console.log('Timeline loaded successfully, hiding static tweet');
+                                        staticContainer.style.display = 'none';
+                                        timelineContainer.style.display = 'block';
+                                        timelineLoaded = true;
+                                    } else {
+                                        console.log('Timeline failed to load properly, keeping static tweet');
+                                        timelineContainer.style.display = 'none';
+                                        staticContainer.style.display = 'block';
+                                    }
+                                }, 8000);
+                                
+                            }).catch(function(error) {
+                                console.error('Timeline loading failed:', error);
+                                timelineContainer.style.display = 'none';
+                                staticContainer.style.display = 'block';
+                            });
+                            
+                        } else {
+                            console.log('Twitter widgets not available, retrying...');
+                            setTimeout(initTwitterWidgets, 2000);
+                        }
+                    }
+                    
+                    // Start initialization after a short delay
+                    setTimeout(initTwitterWidgets, 1000);
+                    
+                    // Backup: If nothing loads after 15 seconds, ensure static tweet is visible
+                    setTimeout(function() {
+                        if (!timelineLoaded) {
+                            console.log('Ensuring fallback tweet is visible');
+                            if (timelineContainer) timelineContainer.style.display = 'none';
+                            if (staticContainer) {
+                                staticContainer.style.display = 'block';
+                                // Re-render if needed
+                                if (typeof twttr !== 'undefined' && twttr.widgets) {
+                                    twttr.widgets.load(staticContainer);
+                                }
+                            }
+                        }
+                    }, 15000);
+                })();
+            </script>
+            <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+            <script defer async type="text/javascript" src="/static/newscript/graph.js"></script>
+            <script>function loadRecentCard(){
+            let recent_shutdown_card=document.querySelectorAll("#recent-card-source");recent_shutdown_card.forEach(function (item){let temp_value_array=JSON.parse(item.attributes["data-attr"].value.replaceAll("'",'"'));let temp_array_string=""; temp_value_array.forEach(function (num){temp_array_string+=num+", "; });temp_array_string=temp_array_string.slice(0,-2);item.textContent=temp_array_string})
+        }
+        loadRecentCard()
+        </script>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    </div>
+
+    
+    
+      
+
+<div class="footer">
+  <div class="inner-footer">
+    <div class="footer-items footer-col-1">
+      <h1 class="footer-h1">Software Freedom Law Center India</h1>
+      <p>
+        SFLC.IN is the first Indian legal services organization that works
+        exclusively on technology, law, and policy. As a not-for-profit
+        organization engaged in the empowerment of Indian citizens about their
+        digital freedom and rights, it operates as a collective, bringing
+        together different stakeholders to a common platform to further the
+        cause of digital rights. SFLC.in promotes innovation and open access to
+        knowledge by helping policy makers make informed and just decisions
+        regarding the use and adoption of technology. As of 2020, SFLC.in is the
+        only Indian organization to be inducted as a member of the IFEX, a
+        global network to defend the right to freedom of expression and
+        information.
+      </p>
+    </div>
+
+    <div class="footer-items footer-col-2">
+      <h2 class="footer-h2">GET IN TOUCH</h2>
+      <div class="footer-border"></div>
+      <ul class="footer-links">
+        <li>
+          <i class="fa fa-map-marker" aria-hidden="true"></i>2nd Floor, K-9
+          Birbal Road, Block K Jangpura Extension, New Delhi India - 110014
+        </li>
+        <li>
+          <i class="fa fa-phone" aria-hidden="true"></i>+91-11-43587126
+          <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +91-11-24323530
+        </li>
+        <li><i class="fa fa-envelope" aria-hidden="true"></i> mail@sflc.in</li>
+
+        <li>For press inquiries, write to</li>
+        <li><i class="fa fa-envelope" aria-hidden="true"></i> press@sflc.in</li>
+      </ul>
+    </div>
+
+    <div class="footer-items footer-col-3">
+      <h2 class="footer-h2">QUICK LINKS</h2>
+      <div class="footer-border"></div>
+      <ul class="footer-links">
+        <a href="/about/"><li>About us</li></a>
+        <a href="/resources/Policy_Tracker"><li>Policy Tracker</li></a>
+        <a href="/resources/Litigation"><li>Litigation</li></a>
+        <a href="/static-page/caa-protest/"><li>CAA Protest</li></a>
+        <a href="/static-page/jammu-kashmir/"><li>Jammu & Kashmir</li></a>
+        <a href="https://sflc.in/donate" target="_blank"><li>Donate</li></a>
+        <a href="/privacy-policy/" target="_blank"
+          ><li>Privacy policy</li></a
+        >
+      </ul>
+    </div>
+
+    <div class="footer-items footer-col-4">
+      <h2 class="footer-h2">SOCIAL MEDIA</h2>
+      <div class="footer-border"></div>
+      <div class="spacing-1"></div>
+      <div class="social-media">
+        <a href="https://www.facebook.com/sflcin/" target="_blank"
+          ><i class="fa fa-facebook" aria-hidden="true"></i
+        ></a>
+        <a href="https://twitter.com/sflcin" target="_blank"
+          ><i class="fa-brands fa-x-twitter" aria-hidden="true"></i
+        ></a>
+        <a href="https://www.instagram.com/sflc_in/" target="_blank"
+          ><i class="fa fa-instagram" aria-hidden="true"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/company/software-freedom-law-centre-india-sflc.in-/?originalSubdomain=in"
+          target="_blank"
+          ><i class="fa fa-linkedin" aria-hidden="true"></i
+        ></a>
+        <a href="https://gitlab.com/sflcin/internetshutdowns.in" target="_blank"
+          ><i class="fab fa-gitlab"></i
+        ></a>
+        <a href="https://mastodon.social/@sflcin" target="_blank"
+          ><i class="fa-brands fa-mastodon"></i
+        ></a>
+      </div>
+      <div class="spacing-1"></div>
+      <div class="footer-bottom">
+        <h2>Content Policy</h2>
+        <div class="footer-border"></div>
+        <p>
+          Unless otherwise indicated, this work by SFLC.in is licensed under a
+          Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+          International (CC BY-NC-SA 4.0) License.
+        </p>
+        <a href="https://creativecommons.org/licenses/" target="_blank">
+          <img src="/static/images/cc.png"
+        /></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    <!-- Scripts -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/static/javascript/navbar.js"></script>
+
+     
+  </body>
+</html>

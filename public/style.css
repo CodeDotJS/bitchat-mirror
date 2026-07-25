@@ -786,17 +786,32 @@ a.fn:hover {
   color: var(--ink-2);
 }
 
+.why-stat-note {
+  margin: var(--space-4) 0 0;
+  max-width: 42rem;
+  font-size: 1.02rem;
+  line-height: 1.6;
+  color: var(--ink-2);
+}
+
 .why-act {
-  max-width: 36rem;
+  max-width: 38rem;
 }
 
 .why-act > p {
-  margin: 0 0 var(--space-4);
-  font-size: 1.15rem;
-  font-weight: 600;
+  margin: 0 0 var(--space-3);
+  font-size: 1.2rem;
+  font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 1.45;
   color: var(--ink);
+}
+
+.why-act-sub {
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+  color: var(--ink-2) !important;
+  margin-bottom: var(--space-4) !important;
 }
 
 .why-sources .source-list {

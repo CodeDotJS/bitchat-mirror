@@ -1,0 +1,38 @@
+
+# Government Orders GitHub to Take Down Bitchat Repositories
+
+
+On July 23, the Indian government has issued a takedown order to GitHub directing it to remove  repositories linked to Bitchat, a decentralized peer-to-peer messaging application that doesn't rely on internet for communication. 
+
+Ministry of Home Affairs' Indian Cyber Crime Coordination Centre (I4C) issued this order as the students at the Jantar Mantar protest site began using such applications for communicating among themselves. 
+
+
+ **What is the legal basis behind removal order:** MHA;s nodal designated authority issued this order under Section 79(3)(b) of the Information Technology Act, 2000, read with Rule 3(1)(d) of the IT (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021. GitHub was directed to remove or disable access to the URLs within 3 hours of receiving the notice, "without vitiating the evidence in any manner."
+
+**URLs ordered to be taken down:**
+    - https://github.com/permissionlesech/bitchat
+    - https://github.com/permissionlesech/bitchat-android
+    - https://github.com/permissionlesech/bitchat-android/releases
+
+**Government's stated rationale:**
+
+- I4C identified Bitchat as a communication platform enabling decentralized peer-to-peer messaging over Bluetooth mesh networks, without dependence on mobile networks, internet connectivity, or centralized servers.
+- The order states the app allows anonymous communication without mandatory user registration, phone number verification, or centralized logging.
+- The notice claims the app's architecture impedes lawful interception, attribution, and investigation by law enforcement.
+- It states the platform could be misused to evade surveillance, coordinate unlawful assemblies, and continue communication during internet shutdowns or restrictions imposed by authorities.
+- The order cites risks of misuse for coordinating violent protests, spreading misinformation, radicalization, and criminal conspiracies.
+- It notes the absence of a centralized service provider limits law enforcement's ability to obtain subscriber information or communication records.
+
+**Laws cited as violated:**
+
+|Act|Sections/Rules|
+|---|---|
+|Information Technology Act, 2000|43, 84B, 84C|
+|Bharatiya Nyaya Sanhita, 2023|61 r/w 196, 197|
+
+**Consequence of non-compliance:** The notice references Rule 7 of the IT Rules, 2021, under which an intermediary that fails to comply loses safe-harbour protection under Section 79(1) of the IT Act and becomes liable for punishment under applicable law, including the IT Act and the Bharatiya Nyaya Sanhita, 2023.
+
+
+
+
+1. [[MHA I4C order to remove bitchat]]
