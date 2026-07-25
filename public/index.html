@@ -8,6 +8,8 @@
       name="description"
       content="An unofficial mirror for bitchat Android APKs. Peer-to-peer messaging that works when platforms and governments try to shut it down."
     />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,25 +21,29 @@
   <body>
     <div class="shell">
       <header class="site-header">
-        <a class="brand" href="/">bitchat</a>
+        <a class="brand" href="/">
+          <img class="brand-mark" src="/favicon.svg" width="28" height="28" alt="" />
+          bitchat
+        </a>
         <nav class="nav" aria-label="Primary">
           <a href="/" aria-current="page">Download</a>
+          <a href="#why">Why this exists</a>
           <a href="/archive.html">Archive</a>
         </nav>
       </header>
 
       <section class="hero">
         <div class="hero-copy">
-          <p class="kicker">Unofficial mirror · offline-first mesh</p>
+          <p class="kicker">Against censorship · offline-first mesh</p>
           <h1>bitchat</h1>
           <p class="hero-lede">
-            App stores can be blocked. Phones talking over Bluetooth are much harder to
-            silence. This mirror keeps bitchat’s Android APKs reachable when upstream is
-            throttled, taken down, or censored.
+            App stores can be blocked. Whole regions can be taken offline. Phones talking
+            over Bluetooth are much harder to silence. This mirror keeps bitchat’s Android
+            APKs reachable when upstream is throttled, taken down, or censored.
           </p>
           <div class="hero-actions">
             <a class="btn btn-signal" href="#download">Download latest APK</a>
-            <a class="btn btn-ghost" href="/archive.html">All releases</a>
+            <a class="btn btn-ghost" href="#why">Why this mirror</a>
           </div>
         </div>
         <div class="mesh-frame" aria-hidden="true">
@@ -57,6 +63,85 @@
               <p class="title">Loading releases</p>
               <p>Fetching the mirror index…</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="why" aria-labelledby="why-heading">
+        <div class="section-head">
+          <h2 id="why-heading">Why this exists</h2>
+          <span class="aside">We do not believe in internet censorship</span>
+        </div>
+
+        <div class="why-panel">
+          <p class="why-lead">
+            Communication tools should not disappear because a government or platform
+            decides they are inconvenient. bitchat is built for peer-to-peer mesh over
+            Bluetooth — so people can still message nearby when the wider internet is
+            filtered, throttled, or switched off. This site exists to keep the Android
+            builds findable when app stores and GitHub links get hard to reach.
+          </p>
+
+          <div class="fact-grid">
+            <article class="fact">
+              <p class="fact-label">Internet freedom</p>
+              <p class="fact-value">Partly Free</p>
+              <p class="fact-note">
+                Freedom House’s <em>Freedom on the Net 2024</em> rates India “Partly Free”
+                (score 50/100).
+              </p>
+            </article>
+            <article class="fact">
+              <p class="fact-label">Shutdowns, 2016–2023</p>
+              <p class="fact-value">771+</p>
+              <p class="fact-note">
+                Access Now reports India imposed more internet shutdowns than the rest of
+                the world combined in that period.
+              </p>
+            </article>
+            <article class="fact">
+              <p class="fact-label">Longest blackout</p>
+              <p class="fact-value">552 days</p>
+              <p class="fact-note">
+                Jammu &amp; Kashmir’s 2019–2021 communications restrictions included the
+                world’s longest recorded internet shutdown.
+              </p>
+            </article>
+            <article class="fact">
+              <p class="fact-label">Takedown pressure</p>
+              <p class="fact-value">Rising fast</p>
+              <p class="fact-note">
+                Blocking requests to platforms roughly doubled from ~12,600 in 2024 to
+                ~24,300 in 2025 after the Sahyog portal automated government takedowns.
+              </p>
+            </article>
+          </div>
+
+          <div class="why-body">
+            <p>
+              India has blocked websites and apps under the IT Act, ordered ISPs to filter
+              URLs, and repeatedly suspended mobile data during protests, exams, and unrest —
+              including months-long blackouts in places like Manipur. Official reasons vary;
+              the effect is the same: people lose the ability to speak, organise, learn, and
+              stay informed.
+            </p>
+            <p>
+              Centralised app stores and cloud chat make that easy. A BLE mesh does not.
+              When the cell tower is dark, nearby phones can still pass messages hop by hop.
+              Mirroring APKs is a small act of infrastructure: if one download link dies,
+              another copy remains.
+            </p>
+            <p class="why-cite">
+              Context drawn from
+              <a
+                href="https://en.wikipedia.org/wiki/Internet_censorship_in_India"
+                rel="noopener noreferrer"
+                >Internet censorship in India</a
+              >
+              (Wikipedia) and the sources cited there, including Freedom House and Access
+              Now. This mirror is unofficial and not affiliated with bitchat’s upstream
+              maintainers.
+            </p>
           </div>
         </div>
       </section>
@@ -98,10 +183,14 @@
     <footer class="site-footer">
       <div class="shell">
         <div class="footer-col">
-          <p class="footer-brand">bitchat</p>
+          <p class="footer-brand">
+            <img class="brand-mark" src="/favicon.svg" width="24" height="24" alt="" />
+            bitchat
+          </p>
           <p>
-            Unofficial APK mirror. Not affiliated with the upstream project. Built so the
-            app stays reachable when censorship or outages get in the way.
+            Unofficial APK mirror. Not affiliated with the upstream project. Built because
+            we reject internet censorship — and because mesh apps only help if you can
+            still install them.
           </p>
         </div>
         <div class="footer-col">

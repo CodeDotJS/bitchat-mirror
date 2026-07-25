@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Cockroach">
+  <!-- Favicon inspired by https://www.svgrepo.com/show/404999/cockroach.svg -->
+  <rect width="64" height="64" fill="#0c1419"/>
+  <!-- antennae -->
+  <path d="M28 14 C22 6, 14 4, 10 8" fill="none" stroke="#c45a2a" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M36 14 C42 6, 50 4, 54 8" fill="none" stroke="#c45a2a" stroke-width="2.2" stroke-linecap="round"/>
+  <!-- legs left -->
+  <path d="M24 28 C14 26, 8 20, 6 16" fill="none" stroke="#a84820" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M22 36 C12 38, 6 40, 4 46" fill="none" stroke="#a84820" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M24 44 C14 48, 10 54, 10 58" fill="none" stroke="#a84820" stroke-width="2.4" stroke-linecap="round"/>
+  <!-- legs right -->
+  <path d="M40 28 C50 26, 56 20, 58 16" fill="none" stroke="#a84820" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M42 36 C52 38, 58 40, 60 46" fill="none" stroke="#a84820" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M40 44 C50 48, 54 54, 54 58" fill="none" stroke="#a84820" stroke-width="2.4" stroke-linecap="round"/>
+  <!-- abdomen / thorax -->
+  <ellipse cx="32" cy="38" rx="12" ry="16" fill="#8b3a1a"/>
+  <ellipse cx="32" cy="38" rx="9.5" ry="13.5" fill="#6e2c12"/>
+  <!-- head band -->
+  <ellipse cx="32" cy="20.5" rx="7.5" ry="5.5" fill="#c47a4a"/>
+  <!-- head -->
+  <ellipse cx="32" cy="16" rx="5.5" ry="4.5" fill="#5a2410"/>
+  <!-- cerci -->
+  <path d="M28 52 L26 58" fill="none" stroke="#a84820" stroke-width="2" stroke-linecap="round"/>
+  <path d="M36 52 L38 58" fill="none" stroke="#a84820" stroke-width="2" stroke-linecap="round"/>
+</svg>
