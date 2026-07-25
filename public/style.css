@@ -435,8 +435,51 @@ a:hover {
   margin: 0 0 0.75rem;
 }
 
+.why-lead {
+  max-width: 42rem;
+  margin: 0 0 var(--space-5);
+  padding: var(--space-4) 0;
+  border-top: 2px solid var(--ink);
+  border-bottom: 1px solid var(--line-ink);
+}
+
+.why-lead-kicker {
+  margin: 0 0 0.75rem;
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--alert);
+}
+
+.why-lead p {
+  margin: 0 0 1rem;
+  font-size: 1.08rem;
+  line-height: 1.65;
+  color: var(--ink);
+}
+
+.why-lead p:last-child {
+  margin-bottom: 0;
+}
+
+.why-lead em {
+  font-style: italic;
+  color: var(--ink);
+}
+
 .why-prose {
   max-width: 40rem;
+}
+
+.why-prose .why-subhead {
+  margin: 0 0 0.85rem;
+  font-family: var(--font);
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--ink);
 }
 
 .why-prose p {
@@ -448,6 +491,16 @@ a:hover {
 
 .why-prose p:last-child {
   margin-bottom: 0;
+}
+
+.why-prose a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.why-prose a:hover {
+  color: var(--alert);
 }
 
 .fact-grid {

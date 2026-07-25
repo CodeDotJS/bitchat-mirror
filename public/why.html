@@ -66,60 +66,123 @@
       <section class="section" aria-labelledby="context-heading">
         <div class="section-head">
           <h2 id="context-heading">The context</h2>
-          <span class="aside">India · public reporting</span>
+          <span class="aside">India · July 2026</span>
         </div>
+
+        <div class="why-lead">
+          <p class="why-lead-kicker">Why this mirror exists now</p>
+          <p>
+            On 23 July 2026, the Indian Cyber Crime Coordination Centre (I4C) under the
+            Ministry of Home Affairs ordered GitHub to disable access to bitchat
+            repositories within three hours — citing that the app’s Bluetooth mesh design
+            lets people communicate without the internet, registration, or central logs,
+            and therefore “impedes lawful interception” during unrest and internet
+            suspensions. Jack Dorsey published the notice:
+            <em>“The government of India does not like technologies like Bitchat and wants
+            it taken down.”</em>
+            The order landed while authorities were already suspending mobile data around
+            student protests in central Delhi.
+          </p>
+          <p>
+            That is the point of this site. When the state cuts the network <em>and</em>
+            tries to erase the install path, an independent APK mirror is not a convenience
+            — it is continuity. bitchat only helps if you can still get the binary.
+          </p>
+        </div>
+
         <div class="fact-grid">
           <article class="fact">
-            <p class="fact-label">Internet freedom</p>
-            <p class="fact-value">Partly Free</p>
+            <p class="fact-label">India’s share of global shutdowns</p>
+            <p class="fact-value">920 / 2,102</p>
             <p class="fact-note">
-              Freedom House’s <em>Freedom on the Net 2024</em> rates India “Partly Free”
-              (score 50/100).
+              Access Now’s #KeepItOn project has logged 2,102 deliberate internet shutdowns
+              worldwide since 2016. India alone accounts for 920 — more than any other
+              country in the dataset.
             </p>
           </article>
           <article class="fact">
-            <p class="fact-label">Shutdowns, 2016–2023</p>
-            <p class="fact-value">771+</p>
+            <p class="fact-label">Still #1 among democracies</p>
+            <p class="fact-value">65 in 2025</p>
             <p class="fact-note">
-              Access Now reports India imposed more internet shutdowns than the rest of the
-              world combined in that period.
+              India imposed 65 shutdowns in 2025 and 84 in 2024 — the highest totals in any
+              democracy those years. Triggers include protests, communal violence, conflict,
+              and religious holidays across a dozen-plus states.
             </p>
           </article>
           <article class="fact">
-            <p class="fact-label">Longest blackout</p>
+            <p class="fact-label">Longest democratic blackout</p>
             <p class="fact-value">552 days</p>
             <p class="fact-note">
-              Jammu &amp; Kashmir’s 2019–2021 communications restrictions included the
-              world’s longest recorded internet shutdown.
+              After August 2019 in Jammu &amp; Kashmir, people lived through months of no
+              connectivity and then prolonged no-to-low (2G-only) access. Full 4G returned
+              only in February 2021 — among the longest communications restrictions ever
+              recorded in a democracy.
             </p>
           </article>
           <article class="fact">
-            <p class="fact-label">Takedown pressure</p>
-            <p class="fact-value">Rising fast</p>
+            <p class="fact-label">Internet freedom score</p>
+            <p class="fact-value">51 / 100</p>
             <p class="fact-note">
-              Blocking requests to platforms roughly doubled from ~12,600 in 2024 to
-              ~24,300 in 2025 after the Sahyog portal automated government takedowns.
+              Freedom House’s <em>Freedom on the Net 2025</em> still rates India
+              “Partly Free.” Short, localised shutdowns remain a routine tool of
+              administration — not a rare emergency measure.
             </p>
           </article>
         </div>
+
         <div class="why-prose">
+          <h3 class="why-subhead">The pattern</h3>
           <p>
-            India has blocked websites and apps under the IT Act, ordered ISPs to filter
-            URLs, and repeatedly suspended mobile data during protests, exams, and unrest —
-            including months-long blackouts in places like Manipur. Official reasons vary;
-            the effect is the same: people lose the ability to speak, organise, learn, and
-            stay informed.
+            Indian authorities do not only switch off mobile data. They also pressure the
+            platforms that host speech, software, and distribution. The Home Ministry’s
+            Sahyog portal (rolled out October 2024) lets central and state agencies push
+            takedown notices to intermediaries under Section&nbsp;79(3)(b) of the IT Act —
+            a faster, less safeguarded path than the older Section&nbsp;69A blocking
+            process. Platforms from Google and Telegram to Apple have been onboarded; X
+            challenged Sahyog in court as a “censorship portal” and lost in the Karnataka
+            High Court in 2025.
+          </p>
+          <p>
+            Targeting bitchat’s GitHub repos extends that machinery from posts and videos
+            to <em>source code and installable software</em> — specifically because the
+            app is designed to keep working when the cell network is dark. FireChat and
+            Bridgefy filled a similar role for protesters in Hong Kong; bitchat is the
+            same class of tool. If you wait until the blackout to look for an APK, you are
+            already too late.
+          </p>
+          <p>
+            This mirror keeps signed Android builds reachable, tagged to their upstream
+            commits, outside a single corporate download funnel that can be ordered to go
+            dark in three hours.
           </p>
           <p class="why-cite">
-            Context drawn from
+            Sources:
             <a
-              href="https://en.wikipedia.org/wiki/Internet_censorship_in_India"
+              href="https://indianexpress.com/article/business/india-orders-github-block-jack-dorsey-bitchat-app-delhi-protests-10801857/"
               rel="noopener noreferrer"
-              >Internet censorship in India</a
-            >
-            (Wikipedia) and the sources cited there, including Freedom House and Access Now.
-            This mirror is unofficial and not affiliated with bitchat’s upstream
-            maintainers.
+              >Indian Express on the I4C / GitHub order</a
+            >;
+            <a
+              href="https://indianexpress.com/article/india/india-recorded-65-internet-shutdowns-in-2025-highest-among-democracies-access-now-report-10613113/"
+              rel="noopener noreferrer"
+              >Access Now 2025 shutdown tally via Indian Express</a
+            >;
+            <a
+              href="https://freedomhouse.org/country/india/freedom-net/2025"
+              rel="noopener noreferrer"
+              >Freedom House — India, Freedom on the Net 2025</a
+            >;
+            <a
+              href="https://internetshutdowns.in/static-page/jammu-kashmir/"
+              rel="noopener noreferrer"
+              >SFLC.in on the J&amp;K 552-day restriction</a
+            >;
+            <a
+              href="https://indianexpress.com/article/explained/sahyog-x-censorship-portal-9916595/"
+              rel="noopener noreferrer"
+              >Indian Express explainer on Sahyog</a
+            >.
+            Unofficial mirror — not affiliated with bitchat’s upstream maintainers.
           </p>
         </div>
       </section>
