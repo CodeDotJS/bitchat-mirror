@@ -1,196 +1,216 @@
 {
-  "generated_at": "2026-07-25T14:37:59.361549+00:00",
-  "scrapingbee": false,
-  "note": "Rebuilt from on-disk archives after partial run",
+  "generated_at": "2026-07-25T14:44:46.247667+00:00",
+  "scrapingbee": true,
   "sources": [
     {
       "id": "S01",
       "url": "https://indianexpress.com/article/business/india-orders-github-block-jack-dorsey-bitchat-app-delhi-protests-10801857/",
       "file": "S01-indianexpress-github-bitchat.html",
+      "fetched_at": "2026-07-25T14:43:22.300107+00:00",
       "status": "ok",
-      "bytes": 662884,
-      "fetched_at": "2026-07-25T14:34:16.450913+00:00",
-      "method": "direct"
+      "method": "scrapingbee",
+      "bytes": 661436,
+      "content_type": "text/html"
     },
     {
       "id": "S02",
       "url": "https://timesofindia.indiatimes.com/business/india-business/govt-orders-github-to-remove-code-for-internet-free-messaging-app/articleshow/132617808.cms",
       "file": "S02-toi-github-order.html",
+      "fetched_at": "2026-07-25T14:43:27.666815+00:00",
       "status": "ok",
+      "method": "scrapingbee",
       "bytes": 302745,
-      "fetched_at": "2026-07-25T14:34:17.446910+00:00",
-      "method": "direct"
+      "content_type": "text/html"
     },
     {
       "id": "S03",
       "url": "https://www.medianama.com/wp-content/uploads/2026/07/MHA-github-takedown-order.txt",
       "file": "S03-medianama-mha-order.txt",
+      "fetched_at": "2026-07-25T14:43:32.328533+00:00",
       "status": "ok",
+      "method": "scrapingbee",
       "bytes": 2680,
-      "fetched_at": "2026-07-25T14:34:19.124905+00:00",
-      "method": "direct"
+      "content_type": "text/plain"
     },
     {
       "id": "S04",
       "url": "https://indianexpress.com/article/india/india-recorded-65-internet-shutdowns-in-2025-highest-among-democracies-access-now-report-10613113/",
       "file": "S04-indianexpress-keepiton-2025.html",
+      "fetched_at": "2026-07-25T14:43:35.127869+00:00",
       "status": "ok",
-      "bytes": 754994,
-      "fetched_at": "2026-07-25T14:34:21.006900+00:00",
-      "method": "direct"
+      "method": "scrapingbee",
+      "bytes": 758182,
+      "content_type": "text/html"
     },
     {
       "id": "S05",
       "url": "https://www.accessnow.org/wp-content/uploads/2026/03/KeepItOn-Internet-Shutdowns-2025-Annual-Report.pdf",
       "file": "S05-keepiton-2025.pdf",
+      "fetched_at": "2026-07-25T14:43:39.072801+00:00",
       "status": "ok",
+      "method": "direct",
       "bytes": 4624811,
-      "fetched_at": "2026-07-25T14:36:50.333141+00:00",
-      "method": "direct"
+      "content_type": "application/pdf"
     },
     {
       "id": "S06",
       "url": "https://www.accessnow.org/wp-content/uploads/2025/02/KeepItOn-2024-Internet-Shutdowns-Annual-Report.pdf",
       "file": "S06-keepiton-2024.pdf",
+      "fetched_at": "2026-07-25T14:43:44.623875+00:00",
       "status": "ok",
+      "method": "direct",
       "bytes": 7782590,
-      "fetched_at": "2026-07-25T14:37:01.629322+00:00",
-      "method": "direct"
+      "content_type": "application/pdf"
     },
     {
       "id": "S07",
       "url": "https://internetshutdowns.in/static-page/jammu-kashmir/",
       "file": "S07-sflc-jk.html",
+      "fetched_at": "2026-07-25T14:43:46.728410+00:00",
       "status": "ok",
+      "method": "scrapingbee",
       "bytes": 37465,
-      "fetched_at": "2026-07-25T14:37:08.029424+00:00",
-      "method": "direct"
+      "content_type": "text/html"
     },
     {
       "id": "S08",
       "url": "https://lkyspp.nus.edu.sg/docs/cases/internetshutdownindia_pubmgt_ind_nil_en_202606.pdf",
       "file": "S08-lkyspp-shutdowns.pdf",
+      "fetched_at": "2026-07-25T14:43:51.192797+00:00",
       "status": "ok",
+      "method": "direct",
       "bytes": 677951,
-      "fetched_at": "2026-07-25T14:37:11.811483+00:00",
-      "method": "direct"
+      "content_type": "application/pdf"
     },
     {
       "id": "S09",
       "url": "https://www.accessnow.org/press-release/india-keepiton-internet-shutdowns-2023-en/",
       "file": "S09-accessnow-2023-india.html",
+      "fetched_at": "2026-07-25T14:43:55.253914+00:00",
       "status": "ok",
-      "bytes": 323252,
-      "fetched_at": "2026-07-25T14:37:23.343663+00:00",
-      "method": "direct"
+      "method": "scrapingbee",
+      "bytes": 323600,
+      "content_type": "text/html"
     },
     {
       "id": "S10",
       "url": "https://www.top10vpn.com/research/cost-of-internet-shutdowns/2023/",
       "file": "S10-top10vpn-2023.html",
+      "fetched_at": "2026-07-25T14:43:59.523317+00:00",
       "status": "ok",
+      "method": "scrapingbee",
       "bytes": 185175,
-      "fetched_at": "2026-07-25T14:37:24.740684+00:00",
-      "method": "direct"
+      "content_type": "text/html"
     },
     {
       "id": "S10b",
       "url": "https://www.medianama.com/2024/01/223-top10vpn-india-internet-shutdown-2023-cost/",
       "file": "S10b-medianama-585m.html",
+      "fetched_at": "2026-07-25T14:44:03.107644+00:00",
       "status": "ok",
-      "bytes": 84266,
-      "fetched_at": "2026-07-25T14:37:38.045886+00:00",
-      "method": "direct"
+      "method": "scrapingbee",
+      "bytes": 84625,
+      "content_type": "text/html"
     },
     {
       "id": "S11",
       "url": "https://freedomhouse.org/country/india/freedom-net/2025",
       "file": "S11-freedomhouse-india-2025.html",
+      "fetched_at": "2026-07-25T14:44:06.262079+00:00",
       "status": "ok",
-      "bytes": 94232,
-      "fetched_at": "2026-07-25T14:37:38.908899+00:00",
-      "method": "direct"
+      "method": "scrapingbee",
+      "bytes": 94585,
+      "content_type": "text/html"
     },
     {
       "id": "S12",
       "url": "https://www.advocatekhoj.com/library/judgments/announcement.php?WID=12491",
       "file": "S12-anuradha-bhasin.html",
+      "fetched_at": "2026-07-25T14:44:08.911817+00:00",
       "status": "ok",
-      "bytes": 398275,
-      "fetched_at": "2026-07-25T14:37:41.073932+00:00",
-      "method": "direct"
+      "method": "scrapingbee",
+      "bytes": 398634,
+      "content_type": "text/html"
     },
     {
       "id": "S13",
       "url": "https://indianexpress.com/article/explained/sahyog-x-censorship-portal-9916595/",
       "file": "S13-ie-sahyog-explained.html",
+      "fetched_at": "2026-07-25T14:44:13.354516+00:00",
       "status": "ok",
-      "bytes": 755499,
-      "fetched_at": "2026-07-25T14:37:42.167948+00:00",
-      "method": "direct"
+      "method": "scrapingbee",
+      "bytes": 758613,
+      "content_type": "text/html"
     },
     {
       "id": "S14",
       "url": "https://indianexpress.com/article/express-exclusive/130-censorship-orders-issued-via-homes-sahyog-portal-in-5-months-9957698/",
       "file": "S14-ie-sahyog-rti.html",
+      "fetched_at": "2026-07-25T14:44:18.132239+00:00",
       "status": "ok",
-      "bytes": 760835,
-      "fetched_at": "2026-07-25T14:37:43.308965+00:00",
-      "method": "direct"
+      "method": "scrapingbee",
+      "bytes": 764398,
+      "content_type": "text/html"
     },
     {
       "id": "S15",
       "url": "https://indianexpress.com/article/explained/explained-law/karnataka-hc-sahyog-portal-x-challenge-10269277/",
       "file": "S15-ie-sahyog-hc.html",
+      "fetched_at": "2026-07-25T14:44:22.418210+00:00",
       "status": "ok",
-      "bytes": 762635,
-      "fetched_at": "2026-07-25T14:37:44.436982+00:00",
-      "method": "direct"
+      "method": "scrapingbee",
+      "bytes": 766198,
+      "content_type": "text/html"
     },
     {
       "id": "S16",
       "url": "https://github.com/permissionlesstech/bitchat",
       "file": "S16-bitchat-readme.html",
+      "fetched_at": "2026-07-25T14:44:28.068806+00:00",
       "status": "ok",
-      "bytes": 338719,
-      "fetched_at": "2026-07-25T14:37:45.642000+00:00",
-      "method": "direct"
+      "method": "scrapingbee",
+      "bytes": 338720,
+      "content_type": "text/html"
     },
     {
       "id": "S17",
       "url": "https://www.theverge.com/news/701272/jack-dorsey-bitchat-bluetooth-messaging-app",
       "file": "S17-verge-bitchat.html",
+      "fetched_at": "2026-07-25T14:44:31.624267+00:00",
       "status": "ok",
-      "bytes": 367021,
-      "fetched_at": "2026-07-25T14:37:46.580014+00:00",
-      "method": "direct"
+      "method": "scrapingbee",
+      "bytes": 367023,
+      "content_type": "text/html"
     },
     {
       "id": "S18",
       "url": "https://icrier.org/pdf/Anatomy_of_an_Internet_Blackout.pdf",
       "file": "S18-icrier-blackout.pdf",
+      "fetched_at": "2026-07-25T14:44:36.078133+00:00",
       "status": "ok",
+      "method": "direct",
       "bytes": 1817910,
-      "fetched_at": "2026-07-25T14:37:47.828032+00:00",
-      "method": "direct"
+      "content_type": "application/pdf"
     },
     {
       "id": "S19",
       "url": "https://internetshutdowns.in/",
       "file": "S19-sflc-home.html",
+      "fetched_at": "2026-07-25T14:44:39.309283+00:00",
       "status": "ok",
+      "method": "scrapingbee",
       "bytes": 68350,
-      "fetched_at": "2026-07-25T14:37:49.481057+00:00",
-      "method": "direct"
+      "content_type": "text/html"
     },
     {
       "id": "S20",
       "url": "https://pulse.internetsociety.org/en/news/2023/11/internet-shutdown-in-manipur-has-now-crossed-200-days/",
       "file": "S20-isoc-manipur-200.html",
+      "fetched_at": "2026-07-25T14:44:42.693919+00:00",
       "status": "ok",
-      "bytes": 19327,
-      "fetched_at": "2026-07-25T14:37:50.792076+00:00",
-      "method": "direct"
+      "method": "scrapingbee",
+      "bytes": 19680,
+      "content_type": "text/html"
     }
   ]
 }
