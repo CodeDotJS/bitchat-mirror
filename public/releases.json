@@ -1,0 +1,909 @@
+{
+  "generated_at": "2026-07-25T12:35:44Z",
+  "repo": "permissionlesstech/bitchat-android",
+  "public_base": "https://pub-1c78deb4bb3b40fabe85c934017966a1.r2.dev",
+  "budget": {
+    "used_bytes": 652232214,
+    "max_bytes": 10200547328
+  },
+  "releases": [
+    {
+      "tag": "1.7.4",
+      "name": "1.7.4",
+      "published_at": "2026-06-17T18:48:08Z",
+      "prerelease": false,
+      "commit_sha": "ffe62bf1fd45fda2161d99bb36408e998b3a2652",
+      "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/tag/1.7.4",
+      "notes_md": "## What's Changed\r\n* Fix foreground service start eligibility by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/714\r\n\r\n**Full Changelog**: https://github.com/permissionlesstech/bitchat-android/compare/1.7.3...1.7.4",
+      "assets": [
+        {
+          "filename": "app-arm64-v8a-release.apk",
+          "abi": "arm64-v8a",
+          "size_bytes": 16654051,
+          "sha256": "c94bfca2cde9545412b27fadd56a53edd66ca50cad9ef0423ea557a425177fd3",
+          "mirrored": true,
+          "url": "https://pub-1c78deb4bb3b40fabe85c934017966a1.r2.dev/apk/1.7.4/app-arm64-v8a-release.apk",
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/1.7.4/app-arm64-v8a-release.apk"
+        },
+        {
+          "filename": "app-armeabi-v7a-release.apk",
+          "abi": "armeabi-v7a",
+          "size_bytes": 13424977,
+          "sha256": "b3d717861589772e01980654e5ca792e6b4ea4a34f21ca38c336656c6b1b1ed6",
+          "mirrored": true,
+          "url": "https://pub-1c78deb4bb3b40fabe85c934017966a1.r2.dev/apk/1.7.4/app-armeabi-v7a-release.apk",
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/1.7.4/app-armeabi-v7a-release.apk"
+        },
+        {
+          "filename": "app-universal-release.apk",
+          "abi": "universal",
+          "size_bytes": 48800691,
+          "sha256": "44c64ce65cbbe42043b24f03a989b623e23c77ea6f3b95298612fa3bd1e4be4d",
+          "mirrored": true,
+          "url": "https://pub-1c78deb4bb3b40fabe85c934017966a1.r2.dev/apk/1.7.4/app-universal-release.apk",
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/1.7.4/app-universal-release.apk"
+        },
+        {
+          "filename": "app-x86-release.apk",
+          "abi": "x86",
+          "size_bytes": 18537097,
+          "sha256": "9652497b4b7a546b2472a040320071933a07fdd1fff618672034d6507db8d0cb",
+          "mirrored": true,
+          "url": "https://pub-1c78deb4bb3b40fabe85c934017966a1.r2.dev/apk/1.7.4/app-x86-release.apk",
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/1.7.4/app-x86-release.apk"
+        },
+        {
+          "filename": "app-x86_64-release.apk",
+          "abi": "x86_64",
+          "size_bytes": 18538212,
+          "sha256": "72dc97613814e9837f3670c3e9755685d2030a1552c1b946e36779fdee38d696",
+          "mirrored": true,
+          "url": "https://pub-1c78deb4bb3b40fabe85c934017966a1.r2.dev/apk/1.7.4/app-x86_64-release.apk",
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/1.7.4/app-x86_64-release.apk"
+        }
+      ]
+    },
+    {
+      "tag": "1.7.3",
+      "name": "1.7.3",
+      "published_at": "2026-06-16T18:10:39Z",
+      "prerelease": false,
+      "commit_sha": "ae6641270a9fa61c262e39261ed883f2bf108f3c",
+      "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/tag/1.7.3",
+      "notes_md": "## What's Changed\r\n* Fix request sync duplicate public messages by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/707\r\n* fix(sync): resolve hash alignment and early break bugs on GCS filter trimming by @a1denvalu3 in https://github.com/permissionlesstech/bitchat-android/pull/708\r\n* Fix Android security parity from iOS audit by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/709\r\n* Wifi aware refactor mesh core by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/711\r\n* feat: disable Wi‑Fi Aware by default by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/712\r\n\r\n\r\n**Full Changelog**: https://github.com/permissionlesstech/bitchat-android/compare/1.7.2...1.7.3",
+      "assets": [
+        {
+          "filename": "app-arm64-v8a-release.apk",
+          "abi": "arm64-v8a",
+          "size_bytes": 16654051,
+          "sha256": "5a43a6b734ce75e9203dbc56fffff878033384c340901d9b83b89dfd90e8e98d",
+          "mirrored": true,
+          "url": "https://pub-1c78deb4bb3b40fabe85c934017966a1.r2.dev/apk/1.7.3/app-arm64-v8a-release.apk",
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/1.7.3/app-arm64-v8a-release.apk"
+        },
+        {
+          "filename": "app-armeabi-v7a-release.apk",
+          "abi": "armeabi-v7a",
+          "size_bytes": 13424977,
+          "sha256": "048fa495c9262703f4fed47fbcf8f3b70c8fe4e5c8b686914e42ea9a86998262",
+          "mirrored": true,
+          "url": "https://pub-1c78deb4bb3b40fabe85c934017966a1.r2.dev/apk/1.7.3/app-armeabi-v7a-release.apk",
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/1.7.3/app-armeabi-v7a-release.apk"
+        },
+        {
+          "filename": "app-universal-release.apk",
+          "abi": "universal",
+          "size_bytes": 48800691,
+          "sha256": "1b5097cc4e8a5752539e7d1cf0e19649066badc43a3d55fe4e6e568868ba7b9a",
+          "mirrored": true,
+          "url": "https://pub-1c78deb4bb3b40fabe85c934017966a1.r2.dev/apk/1.7.3/app-universal-release.apk",
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/1.7.3/app-universal-release.apk"
+        },
+        {
+          "filename": "app-x86-release.apk",
+          "abi": "x86",
+          "size_bytes": 18537097,
+          "sha256": "a5a4c8ebc4c2681fc36f4a32e77bebe8126bf6abcd79032f39f1bf9a5950896c",
+          "mirrored": true,
+          "url": "https://pub-1c78deb4bb3b40fabe85c934017966a1.r2.dev/apk/1.7.3/app-x86-release.apk",
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/1.7.3/app-x86-release.apk"
+        },
+        {
+          "filename": "app-x86_64-release.apk",
+          "abi": "x86_64",
+          "size_bytes": 18538212,
+          "sha256": "b0ca22c0c2768a0d84bbfce3b186c92eebad3643b701643fce14dd9707a7f4cd",
+          "mirrored": true,
+          "url": "https://pub-1c78deb4bb3b40fabe85c934017966a1.r2.dev/apk/1.7.3/app-x86_64-release.apk",
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/1.7.3/app-x86_64-release.apk"
+        }
+      ]
+    },
+    {
+      "tag": "1.7.2",
+      "name": "1.7.2",
+      "published_at": "2026-03-30T08:45:30Z",
+      "prerelease": false,
+      "commit_sha": "4dfec917c822368a90bf0ae046e3cb354fbd6cd6",
+      "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/tag/1.7.2",
+      "notes_md": "## What's Changed\r\n* bump 1.7.1 by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/661\r\n* chore: update license from MIT to GPLv3 by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/674\r\n* Unit tests for BinaryProtocol by @rollforsats in https://github.com/permissionlesstech/bitchat-android/pull/678\r\n* fix: use CSPRNG for heartbeat intervals by @a1denvalu3 in https://github.com/permissionlesstech/bitchat-android/pull/685\r\n* Add 'Send private message' action to chat user sheet by @a1denvalu3 in https://github.com/permissionlesstech/bitchat-android/pull/649\r\n* fix: add input validation for protocol decoding and fragment reassembly by @0x0v1 in https://github.com/permissionlesstech/bitchat-android/pull/666\r\n* update version by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/688\r\n\r\n## New Contributors\r\n* @rollforsats made their first contribution in https://github.com/permissionlesstech/bitchat-android/pull/678\r\n* @0x0v1 made their first contribution in https://github.com/permissionlesstech/bitchat-android/pull/666\r\n\r\n**Full Changelog**: https://github.com/permissionlesstech/bitchat-android/compare/1.7.1...1.7.2",
+      "assets": [
+        {
+          "filename": "bitchat-arm64-v8a-release.apk",
+          "abi": "arm64-v8a",
+          "size_bytes": 16601743,
+          "sha256": "787e8c2a9ca2ed1423e179964508071ec871d777bb3e15208615b94b752347db",
+          "mirrored": true,
+          "url": "https://pub-1c78deb4bb3b40fabe85c934017966a1.r2.dev/apk/1.7.2/bitchat-arm64-v8a-release.apk",
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/1.7.2/bitchat-arm64-v8a-release.apk"
+        },
+        {
+          "filename": "bitchat-armeabi-v7a-release.apk",
+          "abi": "armeabi-v7a",
+          "size_bytes": 13372669,
+          "sha256": "b2297685ba28a205bc8e31e3e28e636ceb15cb2402ffae383807cef54ee79fe8",
+          "mirrored": true,
+          "url": "https://pub-1c78deb4bb3b40fabe85c934017966a1.r2.dev/apk/1.7.2/bitchat-armeabi-v7a-release.apk",
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/1.7.2/bitchat-armeabi-v7a-release.apk"
+        },
+        {
+          "filename": "bitchat-universal-release.apk",
+          "abi": "universal",
+          "size_bytes": 48748383,
+          "sha256": "39f7fce76931da5db7f0eebd0d17b5bb957e948e1be145851eeb186ee183d27f",
+          "mirrored": true,
+          "url": "https://pub-1c78deb4bb3b40fabe85c934017966a1.r2.dev/apk/1.7.2/bitchat-universal-release.apk",
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/1.7.2/bitchat-universal-release.apk"
+        },
+        {
+          "filename": "bitchat-x86-release.apk",
+          "abi": "x86",
+          "size_bytes": 18484789,
+          "sha256": "ba748c6baeb55ff51c2a054d719cafcd9c0124fc2f042e5b7ac6caeb21b7dfce",
+          "mirrored": true,
+          "url": "https://pub-1c78deb4bb3b40fabe85c934017966a1.r2.dev/apk/1.7.2/bitchat-x86-release.apk",
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/1.7.2/bitchat-x86-release.apk"
+        },
+        {
+          "filename": "bitchat-x86_64-release.apk",
+          "abi": "x86_64",
+          "size_bytes": 18485904,
+          "sha256": "15a35803199993fe6e17b2bd56cfca0e794f5d2bcac49a3fc35b5399bf007293",
+          "mirrored": true,
+          "url": "https://pub-1c78deb4bb3b40fabe85c934017966a1.r2.dev/apk/1.7.2/bitchat-x86_64-release.apk",
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/1.7.2/bitchat-x86_64-release.apk"
+        }
+      ]
+    },
+    {
+      "tag": "1.7.1",
+      "name": "APK release 1.7.1",
+      "published_at": "2026-02-01T12:27:07Z",
+      "prerelease": false,
+      "commit_sha": "43029e88e6ad105a23e131f391a4cd4fe8aa5a06",
+      "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/tag/1.7.1",
+      "notes_md": "## What's Changed\r\n* Fix location updates in notes and Nostr subscription leaks by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/636\r\n* fix(geohash): cleanup sampling subscriptions when closing location sheet by @a1denvalu3 in https://github.com/permissionlesstech/bitchat-android/pull/659\r\n* fix: pause geohash heartbeat (kind 20001) sampling when backgrounded by @a1denvalu3 in https://github.com/permissionlesstech/bitchat-android/pull/660\r\n\r\n**Full Changelog**: https://github.com/permissionlesstech/bitchat-android/compare/1.7.0...1.7.1",
+      "assets": [
+        {
+          "filename": "app-arm64-v8a-release.apk",
+          "abi": "arm64-v8a",
+          "size_bytes": 16600003,
+          "sha256": "5bd1d2363e9aa497b205f1aa21c9cae1ffda2f7a75d5e8a7edd5b389fecfdbc2",
+          "mirrored": true,
+          "url": "https://pub-1c78deb4bb3b40fabe85c934017966a1.r2.dev/apk/1.7.1/app-arm64-v8a-release.apk",
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/1.7.1/app-arm64-v8a-release.apk"
+        },
+        {
+          "filename": "app-armeabi-v7a-release.apk",
+          "abi": "armeabi-v7a",
+          "size_bytes": 13370929,
+          "sha256": "41e90d4dd08d626a3b72b5d395b09911752820b9ce19e97ef752c3876704d5bb",
+          "mirrored": true,
+          "url": "https://pub-1c78deb4bb3b40fabe85c934017966a1.r2.dev/apk/1.7.1/app-armeabi-v7a-release.apk",
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/1.7.1/app-armeabi-v7a-release.apk"
+        },
+        {
+          "filename": "app-universal-release.apk",
+          "abi": "universal",
+          "size_bytes": 48746643,
+          "sha256": "c82de396fae8157ac7540278b0994c658038bdf819c1d79e0c2a881c849ec596",
+          "mirrored": true,
+          "url": "https://pub-1c78deb4bb3b40fabe85c934017966a1.r2.dev/apk/1.7.1/app-universal-release.apk",
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/1.7.1/app-universal-release.apk"
+        },
+        {
+          "filename": "app-x86-release.apk",
+          "abi": "x86",
+          "size_bytes": 18483049,
+          "sha256": "873bdb5c5552e56ad48644ee20bc41eccbc6844bf3c70acab151de6c933d8ad2",
+          "mirrored": true,
+          "url": "https://pub-1c78deb4bb3b40fabe85c934017966a1.r2.dev/apk/1.7.1/app-x86-release.apk",
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/1.7.1/app-x86-release.apk"
+        },
+        {
+          "filename": "app-x86_64-release.apk",
+          "abi": "x86_64",
+          "size_bytes": 18484164,
+          "sha256": "425812c93153e99d7da71ba506c94acba03e60dde90e3d1ac279954f99f71f87",
+          "mirrored": true,
+          "url": "https://pub-1c78deb4bb3b40fabe85c934017966a1.r2.dev/apk/1.7.1/app-x86_64-release.apk",
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/1.7.1/app-x86_64-release.apk"
+        }
+      ]
+    },
+    {
+      "tag": "1.7.0",
+      "name": "APK release 1.7.0",
+      "published_at": "2026-01-15T18:17:58Z",
+      "prerelease": false,
+      "commit_sha": "e3056d70c00d39dea5bb27e3553abaeddbbd08a0",
+      "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/tag/1.7.0",
+      "notes_md": "- source routing: more efficient direct messages\r\n- geohash presence: count online people in region-city\r\n- update arti to 1.9.0 and add 32 bit builds\r\n- geocoder for de-googled phone via openstreetmap\r\n- fixes several issues identified by security audit firm cure53\r\n- many ui improvements and fixes\r\n\r\n## What's Changed\r\n* Implement Geohash Presence (Heartbeats) by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/576\r\n* Gossip mesh topology + source-based routing by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/445\r\n* Feat/graph force by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/581\r\n* visual logger refactor by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/583\r\n* Update arti to 1.9.0 and produce 32 bit builds by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/585\r\n* Move PrivateChatSheet hosting into ChatDialogs and unify sheet state by @yet300 in https://github.com/permissionlesstech/bitchat-android/pull/586\r\n* use bluetooth icon by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/597\r\n* Fix/nostr dm bottom sheet by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/598\r\n* Fix and Improve LocationManager logic by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/599\r\n* OSM fallback for geocoding by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/611\r\n* security: prevent storage exhaustion by saving incoming files to cache by @a1denvalu3 in https://github.com/permissionlesstech/bitchat-android/pull/606\r\n* feat: Stable BLE Peer Identity via Scan Response by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/613\r\n* Refactor: Implement Hybrid Location Provider (System/Fused) by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/612\r\n* fix(security): Clear in-memory keys during panic mode by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/596\r\n* Improve QR Verification UI by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/615\r\n* Implement iOS-compatible Direct Peer Detection (TTL Logic) by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/574\r\n* fix: centralize and strictly enforce connection limits by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/618\r\n* Fix: Correctly parse recipient/sender IDs in broadcaster to enable unicast by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/619\r\n* security: ensure media files are deleted during panic mode by @a1denvalu3 in https://github.com/permissionlesstech/bitchat-android/pull/607\r\n* fix: Ensure empty neighbor lists in newer announcements clear mesh edges by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/620\r\n* fix(ui): Show acquiring location state instead of unavailable by @a1denvalu3 in https://github.com/permissionlesstech/bitchat-android/pull/621\r\n* Fix/590-Private-key-stored-as-Plain-text by @anupamjhabbl in https://github.com/permissionlesstech/bitchat-android/pull/603\r\n* Refactored BottomSheetTopBar to  BitchatSheetTopBar by @yet300 in https://github.com/permissionlesstech/bitchat-android/pull/601\r\n* spacing for geohash sheet text by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/623\r\n* feat: Introduce Gradle property to control APK splits by @moehamade in https://github.com/permissionlesstech/bitchat-android/pull/560\r\n* bump to 1.7.0 by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/624\r\n\r\n## New Contributors\r\n* @anupamjhabbl made their first contribution in https://github.com/permissionlesstech/bitchat-android/pull/603\r\n\r\n**Full Changelog**: https://github.com/permissionlesstech/bitchat-android/compare/1.6.0...1.7.0",
+      "assets": [
+        {
+          "filename": "app-arm64-v8a-release.apk",
+          "abi": "arm64-v8a",
+          "size_bytes": 16600363,
+          "sha256": "79f38ba53dc47c60d7fa031224ae15cc7027155d89c7fb9ee6c7e334ed894f7f",
+          "mirrored": true,
+          "url": "https://pub-1c78deb4bb3b40fabe85c934017966a1.r2.dev/apk/1.7.0/app-arm64-v8a-release.apk",
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/1.7.0/app-arm64-v8a-release.apk"
+        },
+        {
+          "filename": "app-armeabi-v7a-release.apk",
+          "abi": "armeabi-v7a",
+          "size_bytes": 13371289,
+          "sha256": "b5a7dc832714bedfb2fbebc6bb9fbc08750d31726494f864d42bb30e0432943c",
+          "mirrored": true,
+          "url": "https://pub-1c78deb4bb3b40fabe85c934017966a1.r2.dev/apk/1.7.0/app-armeabi-v7a-release.apk",
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/1.7.0/app-armeabi-v7a-release.apk"
+        },
+        {
+          "filename": "app-universal-release.apk",
+          "abi": "universal",
+          "size_bytes": 48747003,
+          "sha256": "7362f4a6de84a9232e959da183b80f70eb1281dee37b8408d053bada51da1bb5",
+          "mirrored": true,
+          "url": "https://pub-1c78deb4bb3b40fabe85c934017966a1.r2.dev/apk/1.7.0/app-universal-release.apk",
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/1.7.0/app-universal-release.apk"
+        },
+        {
+          "filename": "app-x86-release.apk",
+          "abi": "x86",
+          "size_bytes": 18483409,
+          "sha256": "61c558ee7fe33795edc3f32d42d59c2094525c5e549439667290de04537d6e2b",
+          "mirrored": true,
+          "url": "https://pub-1c78deb4bb3b40fabe85c934017966a1.r2.dev/apk/1.7.0/app-x86-release.apk",
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/1.7.0/app-x86-release.apk"
+        },
+        {
+          "filename": "app-x86_64-release.apk",
+          "abi": "x86_64",
+          "size_bytes": 18484524,
+          "sha256": "1af4052065fe352bfc7885c54cc736a3ce188b194fdd7c38a903b909bfa8904f",
+          "mirrored": true,
+          "url": "https://pub-1c78deb4bb3b40fabe85c934017966a1.r2.dev/apk/1.7.0/app-x86_64-release.apk",
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/1.7.0/app-x86_64-release.apk"
+        }
+      ]
+    },
+    {
+      "tag": "1.6.0",
+      "name": "APK release 1.6.0",
+      "published_at": "2026-01-05T10:34:33Z",
+      "prerelease": false,
+      "commit_sha": "654d385b6df8a304885950b8c7bf0573de5bf74c",
+      "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/tag/1.6.0",
+      "notes_md": "## new\r\n- background persistence: bitchat can now run in the background to support the mesh even if you leave the app\r\n- improved tor: self-compiled arti library reduces APK size from 150 MB to 15 MB\r\n- QR code contact verification \r\n- fixes and improvements\r\n\r\n## What's Changed\r\n* bump targetSdk to 35 by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/526\r\n* Prevent quit notification from reappearing by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/530\r\n* fix: wifi aware socket binding by @aidenvalue in https://github.com/permissionlesstech/bitchat-android/pull/533\r\n* Revert \"fix: wifi aware socket binding\" by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/535\r\n* Fix notification user try 2 by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/541\r\n* Fix: Add @ConscryptMode annotation to resolve test failures by @rebroad in https://github.com/permissionlesstech/bitchat-android/pull/543\r\n* Fix small-screen header clipping (#519) by @Kargatharaakash in https://github.com/permissionlesstech/bitchat-android/pull/532\r\n* QR and Verification feature by @yet300 in https://github.com/permissionlesstech/bitchat-android/pull/529\r\n* Enforce mandatory packet signature verification by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/546\r\n* Revert \"Fix small-screen header clipping (#519)\" by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/548\r\n* fix: location channel manager by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/516\r\n* fix: sync notification peer count with sidebar by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/547\r\n* bump versioncode to 28 by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/551\r\n* FIX: verify signature only for ANNOUNCE, MESSAGE, and FILE_TRANSFER like ios by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/552\r\n* versioncode bump to 29 by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/553\r\n* Fix/foreground permissions scanning by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/556\r\n* drop duplicate announces based on TTL by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/558\r\n* scan duration fix by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/557\r\n* feat: Build and release per-architecture APKs by @moehamade in https://github.com/permissionlesstech/bitchat-android/pull/550\r\n* bump vc to 30 by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/559\r\n\r\n## New Contributors\r\n* @aidenvalue made their first contribution in https://github.com/permissionlesstech/bitchat-android/pull/533\r\n* @rebroad made their first contribution in https://github.com/permissionlesstech/bitchat-android/pull/543\r\n* @Kargatharaakash made their first contribution in https://github.com/permissionlesstech/bitchat-android/pull/532\r\n\r\n**Full Changelog**: https://github.com/permissionlesstech/bitchat-android/compare/1.6.0-rc1...1.6.0-rc3",
+      "assets": [
+        {
+          "filename": "app-arm64-v8a-release.apk",
+          "abi": "arm64-v8a",
+          "size_bytes": 16494343,
+          "sha256": "a0bb9e9acb41a351d523d94247aac61b33f8f1d8f8b7288f2757013dd5687cbf",
+          "mirrored": true,
+          "url": "https://pub-1c78deb4bb3b40fabe85c934017966a1.r2.dev/apk/1.6.0/app-arm64-v8a-release.apk",
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/1.6.0/app-arm64-v8a-release.apk"
+        },
+        {
+          "filename": "app-universal-release.apk",
+          "abi": "universal",
+          "size_bytes": 38384447,
+          "sha256": "30b8549c5dadd5c60a298bdb9240ad35284cfcab4d96da4c6d889c84eb2658df",
+          "mirrored": true,
+          "url": "https://pub-1c78deb4bb3b40fabe85c934017966a1.r2.dev/apk/1.6.0/app-universal-release.apk",
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/1.6.0/app-universal-release.apk"
+        },
+        {
+          "filename": "app-x86_64-release.apk",
+          "abi": "x86_64",
+          "size_bytes": 18378504,
+          "sha256": "f38256423338135d00847f107b30a991e6e93d543bca72f597ccb5256b885934",
+          "mirrored": true,
+          "url": "https://pub-1c78deb4bb3b40fabe85c934017966a1.r2.dev/apk/1.6.0/app-x86_64-release.apk",
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/1.6.0/app-x86_64-release.apk"
+        }
+      ]
+    },
+    {
+      "tag": "1.6.0-rc2",
+      "name": "APK release 1.6.0-rc2",
+      "published_at": "2026-01-05T04:41:57Z",
+      "prerelease": true,
+      "commit_sha": "97338066102191a98e2406b82db7f7030f710a31",
+      "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/tag/1.6.0-rc2",
+      "notes_md": "## new\r\n- background persistence: bitchat can now run in the background to support the mesh even if you leave the app\r\n- improved tor: self-compiled arti library reduces APK size from 150 MB to 10 MB\r\n- QR code contact verification \r\n- bug fixes and improvements\r\n\r\n## What's Changed\r\n* feat: Tablet orientation fix for landscape mode by @developerchunk in https://github.com/permissionlesstech/bitchat-android/pull/490\r\n* mesh optimization: suppress relay of reassembled packets by setting TTL=0 by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/492\r\n* refactor app constants: service UUID for BLE by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/494\r\n* Fix direct peer detection by binding on per-connection first ANNOUNCE and never dropping ANNOUNCE as duplicates by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/502\r\n* fix connection attempt counter tracker by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/503\r\n* Fix: do not reject empty packets that arent message type by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/510\r\n* refactor app constants: service UUID for BLE by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/500\r\n* Add Network permission requirement to README by @Mafiadoener36 in https://github.com/permissionlesstech/bitchat-android/pull/522\r\n* feat: add product flavors and TorProvider abstraction by @moehamade in https://github.com/permissionlesstech/bitchat-android/pull/508\r\n* Migrate from LiveData to Kotlin Flow by @yet300 in https://github.com/permissionlesstech/bitchat-android/pull/518\r\n* Background persistence by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/505\r\n* bump version 1.6.0 by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/524\r\n* bump targetSdk to 35 by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/526\r\n* Prevent quit notification from reappearing by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/530\r\n* fix: wifi aware socket binding by @aidenvalue in https://github.com/permissionlesstech/bitchat-android/pull/533\r\n* Revert \"fix: wifi aware socket binding\" by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/535\r\n* Fix notification user try 2 by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/541\r\n* Fix: Add @ConscryptMode annotation to resolve test failures by @rebroad in https://github.com/permissionlesstech/bitchat-android/pull/543\r\n* Fix small-screen header clipping (#519) by @Kargatharaakash in https://github.com/permissionlesstech/bitchat-android/pull/532\r\n* QR and Verification feature by @yet300 in https://github.com/permissionlesstech/bitchat-android/pull/529\r\n* Enforce mandatory packet signature verification by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/546\r\n* Revert \"Fix small-screen header clipping (#519)\" by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/548\r\n* fix: location channel manager by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/516\r\n* fix: sync notification peer count with sidebar by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/547\r\n* bump versioncode to 28 by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/551\r\n* FIX: verify signature only for ANNOUNCE, MESSAGE, and FILE_TRANSFER like ios by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/552\r\n* versioncode bump to 29 by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/553\r\n\r\n## New Contributors\r\n* @Mafiadoener36 made their first contribution in https://github.com/permissionlesstech/bitchat-android/pull/522\r\n* @aidenvalue made their first contribution in https://github.com/permissionlesstech/bitchat-android/pull/533\r\n* @rebroad made their first contribution in https://github.com/permissionlesstech/bitchat-android/pull/543\r\n* @Kargatharaakash made their first contribution in https://github.com/permissionlesstech/bitchat-android/pull/532\r\n\r\n**Full Changelog**: https://github.com/permissionlesstech/bitchat-android/compare/1.5.1...1.6.0",
+      "assets": [
+        {
+          "filename": "bitchat-1.6.apk",
+          "abi": null,
+          "size_bytes": 16489331,
+          "sha256": null,
+          "mirrored": false,
+          "url": null,
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/1.6.0-rc2/bitchat-1.6.apk"
+        }
+      ]
+    },
+    {
+      "tag": "1.6.0-rc1",
+      "name": "APK release 1.6.0-rc1",
+      "published_at": "2025-12-13T09:53:44Z",
+      "prerelease": true,
+      "commit_sha": "8767cfdea35abf8fa9c6dbcf93a1a4dc83495560",
+      "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/tag/1.6.0-rc1",
+      "notes_md": "## new\r\n- background persistence: bitchat can now run in the background to support the mesh even if you leave the app\r\n- improved tor: self-compiled arti library reduces APK size from 150 MB to 10 MB\r\n- bug fixes and improvements\r\n\r\n## What's Changed\r\n* feat: Tablet orientation fix for landscape mode by @developerchunk in https://github.com/permissionlesstech/bitchat-android/pull/490\r\n* mesh optimization: suppress relay of reassembled packets by setting TTL=0 by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/492\r\n* refactor app constants: service UUID for BLE by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/494\r\n* Fix direct peer detection by binding on per-connection first ANNOUNCE and never dropping ANNOUNCE as duplicates by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/502\r\n* fix connection attempt counter tracker by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/503\r\n* Fix: do not reject empty packets that arent message type by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/510\r\n* refactor app constants: service UUID for BLE by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/500\r\n* Add Network permission requirement to README by @Mafiadoener36 in https://github.com/permissionlesstech/bitchat-android/pull/522\r\n* feat: add product flavors and TorProvider abstraction by @moehamade in https://github.com/permissionlesstech/bitchat-android/pull/508\r\n* Migrate from LiveData to Kotlin Flow by @yet300 in https://github.com/permissionlesstech/bitchat-android/pull/518\r\n* Background persistence by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/505\r\n* bump version 1.6.0 by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/524\r\n\r\n## New Contributors\r\n* @Mafiadoener36 made their first contribution in https://github.com/permissionlesstech/bitchat-android/pull/522\r\n\r\n**Full Changelog**: https://github.com/permissionlesstech/bitchat-android/compare/1.5.1...1.6.0-rc1",
+      "assets": [
+        {
+          "filename": "bitchat-1.6.0-rc1.apk",
+          "abi": null,
+          "size_bytes": 10024956,
+          "sha256": null,
+          "mirrored": false,
+          "url": null,
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/1.6.0-rc1/bitchat-1.6.0-rc1.apk"
+        }
+      ]
+    },
+    {
+      "tag": "1.5.1",
+      "name": "APK release 1.5.1",
+      "published_at": "2025-10-19T10:56:40Z",
+      "prerelease": false,
+      "commit_sha": "f633509848b8e51943b4ab3f0b3d8ef7a239eefa",
+      "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/tag/1.5.1",
+      "notes_md": "- location notes\r\n- take in-app photos\r\n- audio note optimization\r\n\r\n## What's Changed\r\n* show media buttons only in mesh by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/487\r\n* bump to 1.5.1 by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/488\r\n\r\n\r\n**Full Changelog**: https://github.com/permissionlesstech/bitchat-android/compare/1.5.0...1.5.1",
+      "assets": [
+        {
+          "filename": "bitchat-1.5.1.apk",
+          "abi": null,
+          "size_bytes": 149171961,
+          "sha256": null,
+          "mirrored": false,
+          "url": null,
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/1.5.1/bitchat-1.5.1.apk"
+        }
+      ]
+    },
+    {
+      "tag": "1.5.0",
+      "name": "APK release 1.5.0",
+      "published_at": "2025-10-18T19:19:05Z",
+      "prerelease": false,
+      "commit_sha": "2869a2b1925bc7fb2f16a9c82c335550acb15c0e",
+      "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/tag/1.5.0",
+      "notes_md": "- location notes\r\n- take in-app photos\r\n- audio note optimization\r\n\r\n## What's Changed\r\n* fix: Resolve debug settings bottom sheet crash on some devices by @developerchunk in https://github.com/permissionlesstech/bitchat-android/pull/474\r\n* fix: string formatting crash rssi translation by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/478\r\n* bump versioncode 24 by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/479\r\n* Location notes by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/482\r\n* lower voice quality, smaller file size by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/483\r\n* Camera take picture by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/484\r\n* actually 1.5.0 by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/485\r\n\r\n## New Contributors\r\n* @developerchunk made their first contribution in https://github.com/permissionlesstech/bitchat-android/pull/474\r\n\r\n**Full Changelog**: https://github.com/permissionlesstech/bitchat-android/compare/1.4.0...1.5.0",
+      "assets": [
+        {
+          "filename": "bitchat-1.5.0.apk",
+          "abi": null,
+          "size_bytes": 149171865,
+          "sha256": null,
+          "mirrored": false,
+          "url": null,
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/1.5.0/bitchat-1.5.0.apk"
+        }
+      ]
+    },
+    {
+      "tag": "1.4.0",
+      "name": "APK release 1.4.0",
+      "published_at": "2025-10-14T11:51:25Z",
+      "prerelease": false,
+      "commit_sha": "4a6fe922f3bbfd6aade52f83c0392a2318a924e0",
+      "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/tag/1.4.0",
+      "notes_md": "- image and audio transfer over mesh*\r\n- translations\r\n- bug fixes\r\n\r\n*android-only for now, iOS soon\r\n\r\n## What's Changed\r\n* remove the noise handshake if peer goes offline by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/435\r\n* Media transfers by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/440\r\n* fix unit tests by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/442\r\n* fix: clear channel messages on reset by @elian1780 in https://github.com/permissionlesstech/bitchat-android/pull/446\r\n* Translations by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/467\r\n* Remove ghost sync by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/468\r\n* Extract constants by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/469\r\n* bump version 1.4.0 by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/470\r\n\r\n## New Contributors\r\n* @elian1780 made their first contribution in https://github.com/permissionlesstech/bitchat-android/pull/446\r\n\r\n**Full Changelog**: https://github.com/permissionlesstech/bitchat-android/compare/1.3.1...1.4.0",
+      "assets": [
+        {
+          "filename": "bitchat-1.4.0.apk",
+          "abi": null,
+          "size_bytes": 149118454,
+          "sha256": null,
+          "mirrored": false,
+          "url": null,
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/1.4.0/bitchat-1.4.0.apk"
+        }
+      ]
+    },
+    {
+      "tag": "1.3.1",
+      "name": "APK release 1.3.1",
+      "published_at": "2025-09-15T10:48:32Z",
+      "prerelease": false,
+      "commit_sha": "7061a96cce5844ed678662cc7bb60bfe78ec0ef2",
+      "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/tag/1.3.1",
+      "notes_md": "bugfixes:\r\n- fix: tor startup\r\n- fix: deleting geohash bookmarks\r\n- fix: blocking geohash users\r\n\r\n## What's Changed\r\n* bump versioncode by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/419\r\n* lock to tor by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/426\r\n* fix: bookmark removal persistence by @lollerfirst in https://github.com/permissionlesstech/bitchat-android/pull/424\r\n* nostr: fix block feature by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/427\r\n* add github tests by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/233\r\n* better verbose logging by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/431\r\n* bump to 1.3.1 by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/432\r\n\r\n\r\n**Full Changelog**: https://github.com/permissionlesstech/bitchat-android/compare/1.3.0...1.3.1",
+      "assets": [
+        {
+          "filename": "bitchat-1.3.1.apk",
+          "abi": null,
+          "size_bytes": 148510358,
+          "sha256": null,
+          "mirrored": false,
+          "url": null,
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/1.3.1/bitchat-1.3.1.apk"
+        }
+      ]
+    },
+    {
+      "tag": "1.3.0",
+      "name": "APK release 1.3.0",
+      "published_at": "2025-09-14T03:05:34Z",
+      "prerelease": false,
+      "commit_sha": "4786b1f250a909920e3c64b112a949af1c7bc90a",
+      "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/tag/1.3.0",
+      "notes_md": "- gossip sync for missed messages\r\n- geohash channel bookmarks\r\n- onboarding screen redesign\r\n- tor on by default\r\n- bugfixes\r\n\r\n## What's Changed\r\n* Mesh gossip by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/381\r\n* Revert \"Mesh gossip\" by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/394\r\n* add playstore link to readme by @tobioyelekan in https://github.com/permissionlesstech/bitchat-android/pull/400\r\n* fix truncated list in sidebar by @tobioyelekan in https://github.com/permissionlesstech/bitchat-android/pull/405\r\n* feat: use relay timestamps for Nostr DMs; ignore for sorting by @yashbhutwala in https://github.com/permissionlesstech/bitchat-android/pull/396\r\n* peerid computed from noise fingerprint by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/413\r\n* Plumtree sync  by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/393\r\n* Add App Info Bottom Sheet by @yet300 in https://github.com/permissionlesstech/bitchat-android/pull/406\r\n* feat: geohash bookmarks (iOS parity) by @lollerfirst in https://github.com/permissionlesstech/bitchat-android/pull/410\r\n* Settings: Enable Tor by default by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/414\r\n* Fix bluetooth crash: catch errors by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/397\r\n* Redesign: Permissions screen, battery optimization, location sheet by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/415\r\n* bump to 1.3.0 by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/416\r\n* Fix pow by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/417\r\n* default pow to 12 by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/418\r\n\r\n## New Contributors\r\n* @yashbhutwala made their first contribution in https://github.com/permissionlesstech/bitchat-android/pull/396\r\n* @yet300 made their first contribution in https://github.com/permissionlesstech/bitchat-android/pull/406\r\n\r\n**Full Changelog**: https://github.com/permissionlesstech/bitchat-android/compare/1.2.3...1.3.0",
+      "assets": [
+        {
+          "filename": "bitchat-1.3.0.apk",
+          "abi": null,
+          "size_bytes": 148510354,
+          "sha256": null,
+          "mirrored": false,
+          "url": null,
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/1.3.0/bitchat-1.3.0.apk"
+        }
+      ]
+    },
+    {
+      "tag": "1.2.3",
+      "name": "APK release 1.2.3",
+      "published_at": "2025-09-08T13:10:50Z",
+      "prerelease": false,
+      "commit_sha": "bea1bbf1a82a81d03f87dc1da41583ff5d7ded0f",
+      "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/tag/1.2.3",
+      "notes_md": "- geohash location picker\r\n- nostr private messages fixed\r\n- screen layout for onboarding screen fixed\r\n- improved tor stability\r\n\r\n## What's Changed\r\n* Nip13 pow by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/357\r\n* Forcing all commands to lower case by @minhqto in https://github.com/permissionlesstech/bitchat-android/pull/369\r\n* Fix system bar colors for dark theme by @hector6872 in https://github.com/permissionlesstech/bitchat-android/pull/368\r\n* Fix edge-to-edge layout issues by @hector6872 in https://github.com/permissionlesstech/bitchat-android/pull/367\r\n* Refactors cleanup by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/372\r\n* better tor management by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/373\r\n* Fix geohash filtering by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/376\r\n* Debug button by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/377\r\n* fix: action message routing and duplicate local echo in geohash channels by @lollerfirst in https://github.com/permissionlesstech/bitchat-android/pull/374\r\n* better tor management by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/380\r\n* init noise handshake on queue DMs by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/379\r\n* feat(geohash): add in-app Geohash Picker by @lollerfirst in https://github.com/permissionlesstech/bitchat-android/pull/363\r\n* fix some debug settings by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/383\r\n* bump version 1.2.3 by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/384\r\n* fix remove peer on disconnect by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/388\r\n* fix geohash livedata wiring by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/389\r\n* Nostr refactor simplify by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/390\r\n* add missing file by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/392\r\n\r\n\r\n**Full Changelog**: https://github.com/permissionlesstech/bitchat-android/compare/1.2.2...1.2.3",
+      "assets": [
+        {
+          "filename": "bitchat-1.2.3.apk",
+          "abi": null,
+          "size_bytes": 148495566,
+          "sha256": null,
+          "mirrored": false,
+          "url": null,
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/1.2.3/bitchat-1.2.3.apk"
+        }
+      ]
+    },
+    {
+      "tag": "1.2.2",
+      "name": "APK release 1.2.2",
+      "published_at": "2025-08-30T12:12:52Z",
+      "prerelease": false,
+      "commit_sha": "6b77eb93c12c099af7558c8facfdf74c54efeb6c",
+      "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/tag/1.2.2",
+      "notes_md": "privacy & security update\r\n\r\n- use tor for all network connections. to activate press on bitchat in top bar -> network -> tor.\r\n- sign BLE packages and verify signatures (not enforced yet)\r\n- option to disable location services in geohash overview\r\n- now works without notification permissions\r\n\r\n## What's Changed\r\n* fix missing file by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/335\r\n* Bundle tor by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/339\r\n* proguard arti by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/344\r\n* update no internet disclaimers by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/340\r\n* retry on bind error by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/345\r\n* remove tor isolation feature by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/346\r\n* Manually disable location by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/347\r\n* restore default by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/348\r\n* feat: update bundled relays weekly by @lollerfirst in https://github.com/permissionlesstech/bitchat-android/pull/312\r\n* make notifications optional by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/349\r\n* Sign mesh message by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/353\r\n* bump version by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/354\r\n* move tor icon by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/355\r\n\r\n\r\n**Full Changelog**: https://github.com/permissionlesstech/bitchat-android/compare/1.2.1...1.2.2",
+      "assets": [
+        {
+          "filename": "bitchat-1.2.2.apk",
+          "abi": null,
+          "size_bytes": 148426918,
+          "sha256": null,
+          "mirrored": false,
+          "url": null,
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/1.2.2/bitchat-1.2.2.apk"
+        }
+      ]
+    },
+    {
+      "tag": "1.2.1",
+      "name": "APK release 1.2.1",
+      "published_at": "2025-08-28T22:57:14Z",
+      "prerelease": false,
+      "commit_sha": "63d6649ab4fef44853a3096fd603936ed20816e3",
+      "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/tag/1.2.1",
+      "notes_md": "- notifications in geohash channels \r\n- fix location for devices without google play services \r\n- dark / light / system mode in about page\r\n- other UI improvements\r\n\r\n## What's Changed\r\n* Nip17 dms to extend the mesh  by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/313\r\n* Fix location detection by @mario7421 in https://github.com/permissionlesstech/bitchat-android/pull/308\r\n* feat: theme switch light/dark/system by @lollerfirst in https://github.com/permissionlesstech/bitchat-android/pull/318\r\n* Add active peer notification by @minhqto in https://github.com/permissionlesstech/bitchat-android/pull/273\r\n* fixed bulletpoint by @5atoshiNakamoto in https://github.com/permissionlesstech/bitchat-android/pull/272\r\n* UI geohash notifications by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/325\r\n* limit nick length to 15 chars by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/330\r\n* render links normally by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/331\r\n* bump to 1.2.1 by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/332\r\n\r\n## New Contributors\r\n* @mario7421 made their first contribution in https://github.com/permissionlesstech/bitchat-android/pull/308\r\n* @minhqto made their first contribution in https://github.com/permissionlesstech/bitchat-android/pull/273\r\n* @5atoshiNakamoto made their first contribution in https://github.com/permissionlesstech/bitchat-android/pull/272\r\n\r\n**Full Changelog**: https://github.com/permissionlesstech/bitchat-android/compare/1.2.0...1.2.1",
+      "assets": [
+        {
+          "filename": "bitchat-1.2.1.apk",
+          "abi": null,
+          "size_bytes": 3829556,
+          "sha256": null,
+          "mirrored": false,
+          "url": null,
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/1.2.1/bitchat-1.2.1.apk"
+        }
+      ]
+    },
+    {
+      "tag": "1.2.0",
+      "name": "APK release 1.2.0",
+      "published_at": "2025-08-25T08:24:03Z",
+      "prerelease": false,
+      "commit_sha": "941be1b98fc892841070a154d924d0416c5202b7",
+      "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/tag/1.2.0",
+      "notes_md": "georelays and nip-17 DMs in geohash channels\r\n\r\n## What's Changed\r\n* adjust geolocation names by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/298\r\n* UI changes and fixes by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/301\r\n* fix teleport tag and icons by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/303\r\n* Geohash-specific relays by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/306\r\n* fix nip-17 by @shroominic in https://github.com/permissionlesstech/bitchat-android/pull/305\r\n\r\n## New Contributors\r\n* @shroominic made their first contribution in https://github.com/permissionlesstech/bitchat-android/pull/305\r\n\r\n**Full Changelog**: https://github.com/permissionlesstech/bitchat-android/compare/1.1.0...1.2.0",
+      "assets": [
+        {
+          "filename": "bitchat-1.2.0.apk",
+          "abi": null,
+          "size_bytes": 3796788,
+          "sha256": null,
+          "mirrored": false,
+          "url": null,
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/1.2.0/bitchat-1.2.0.apk"
+        }
+      ]
+    },
+    {
+      "tag": "1.1.0",
+      "name": "APK release 1.1.0",
+      "published_at": "2025-08-23T12:20:12Z",
+      "prerelease": false,
+      "commit_sha": "a7604d90266a92fc461e46d35b70286809d2f6ed",
+      "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/tag/1.1.0",
+      "notes_md": "UI/UX improvements\r\n\r\n## What's Changed\r\n* persist last channel by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/284\r\n* user bottom sheet by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/285\r\n* Link preview by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/286\r\n* Geohash notifications by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/288\r\n* Statusbar seamless by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/289\r\n* bump version to 1.1.0 by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/293\r\n* New about sheet by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/294\r\n* slightly increase padding by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/295\r\n\r\n\r\n**Full Changelog**: https://github.com/permissionlesstech/bitchat-android/compare/1.0.0...1.1.0",
+      "assets": [
+        {
+          "filename": "bitchat-1.1.0.apk",
+          "abi": null,
+          "size_bytes": 3776583,
+          "sha256": null,
+          "mirrored": false,
+          "url": null,
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/1.1.0/bitchat-1.1.0.apk"
+        }
+      ]
+    },
+    {
+      "tag": "1.0.0",
+      "name": "APK release 1.0",
+      "published_at": "2025-08-22T21:14:23Z",
+      "prerelease": false,
+      "commit_sha": "fa2e3fa0b28f8d9785f93d4625d4bf232d88a65c",
+      "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/tag/1.0.0",
+      "notes_md": "bitchat geohash \r\n\r\n## What's Changed\r\n* Nostr geohash by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/276\r\n* bump version by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/277\r\n* fix minify errors by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/280\r\n* Scroll fix by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/281\r\n* UI fixes 2 by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/282\r\n\r\n**Full Changelog**: https://github.com/permissionlesstech/bitchat-android/compare/0.9.0...1.0.0",
+      "assets": [
+        {
+          "filename": "bitchat-1.0.0.apk",
+          "abi": null,
+          "size_bytes": 3776331,
+          "sha256": null,
+          "mirrored": false,
+          "url": null,
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/1.0.0/bitchat-1.0.0.apk"
+        }
+      ]
+    },
+    {
+      "tag": "1.0.0-rc2",
+      "name": "APK release 1.0-rc2",
+      "published_at": "2025-08-22T20:31:29Z",
+      "prerelease": true,
+      "commit_sha": "2458b471eddd6e230b8b9ac9c6dfe22b5d91b2fd",
+      "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/tag/1.0.0-rc2",
+      "notes_md": "bitchat geohash \r\n\r\n## What's Changed\r\n* Nostr geohash by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/276\r\n* bump version by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/277\r\n* fix minify errors by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/280\r\n* Scroll fix by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/281\r\n* UI fixes 2 by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/282\r\n\r\n**Full Changelog**: https://github.com/permissionlesstech/bitchat-android/compare/0.9.0...1.0.0-rc2",
+      "assets": [
+        {
+          "filename": "bitchat-1.0.0-rc2.apk",
+          "abi": null,
+          "size_bytes": 3776331,
+          "sha256": null,
+          "mirrored": false,
+          "url": null,
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/1.0.0-rc2/bitchat-1.0.0-rc2.apk"
+        }
+      ]
+    },
+    {
+      "tag": "1.0.0-rc1",
+      "name": "APK release 1.0-rc1",
+      "published_at": "2025-08-22T19:06:30Z",
+      "prerelease": true,
+      "commit_sha": "440c73961e896610156002a4b6b78ec19636bc11",
+      "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/tag/1.0.0-rc1",
+      "notes_md": "bitchat geohash \r\n\r\n## What's Changed\r\n* Nostr geohash by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/276\r\n* bump version by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/277\r\n* fix minify errors by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/280\r\n\r\n\r\n**Full Changelog**: https://github.com/permissionlesstech/bitchat-android/compare/0.9.0...1.0.0-rc1",
+      "assets": [
+        {
+          "filename": "bitchat-1.0.0-rc1.apk",
+          "abi": null,
+          "size_bytes": 3776331,
+          "sha256": null,
+          "mirrored": false,
+          "url": null,
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/1.0.0-rc1/bitchat-1.0.0-rc1.apk"
+        }
+      ]
+    },
+    {
+      "tag": "0.9.0",
+      "name": "APK release 0.9.0",
+      "published_at": "2025-08-22T06:33:17Z",
+      "prerelease": false,
+      "commit_sha": "848cffee07ba233741bd8479cb0829d846a62a75",
+      "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/tag/0.9.0",
+      "notes_md": "new release with stability improvements and bitchat protocol updates. compatible with [bitchat iOS 1.3.1](https://github.com/permissionlesstech/bitchat/releases/tag/v1.3.1).\r\n\r\n## What's Changed\r\n* Mock Android Log to fix PeerManager tests by @shubertm in https://github.com/permissionlesstech/bitchat-android/pull/239\r\n* Fix favorite icon not updating on first Sidebar open by @tairrzayev in https://github.com/permissionlesstech/bitchat-android/pull/237\r\n* add sendPeriodicBroadcastAnnounce to startServices by @lollerfirst in https://github.com/permissionlesstech/bitchat-android/pull/243\r\n* gradle: disable baseline profile for f-droid reproducable builds by @mwarning in https://github.com/permissionlesstech/bitchat-android/pull/260\r\n* Changes bitchat protocol by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/265\r\n* fix fragmentation baby by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/266\r\n* Sign announcements by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/267\r\n* bump to 0.9 by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/269\r\n* change app ID to com.bitchat.droid by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/270\r\n* bump vc to 12 by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/274\r\n\r\n## New Contributors\r\n* @lollerfirst made their first contribution in https://github.com/permissionlesstech/bitchat-android/pull/243\r\n\r\n**Full Changelog**: https://github.com/permissionlesstech/bitchat-android/compare/0.8.2...0.9.0",
+      "assets": [
+        {
+          "filename": "bitchat-0.9.0.apk",
+          "abi": null,
+          "size_bytes": 3285411,
+          "sha256": null,
+          "mirrored": false,
+          "url": null,
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/0.9.0/bitchat-0.9.0.apk"
+        }
+      ]
+    },
+    {
+      "tag": "0.8.2",
+      "name": "APK release 0.8.2",
+      "published_at": "2025-08-07T09:22:57Z",
+      "prerelease": false,
+      "commit_sha": "b34ef896c75828ad5c226ebc23efa98e1acbefa1",
+      "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/tag/0.8.2",
+      "notes_md": "A lot of housekeeping:\r\n- UI fixes\r\n- Mention users by typing \"@\"\r\n- \"/\" button for quick access to system commands\r\n- Remove system messages for connecting and disconnecting users\r\n\r\n## What's Changed\r\n* fix(ui): prevent sender color of past messages by @whflima in https://github.com/permissionlesstech/bitchat-android/pull/201\r\n* fix(readme): Fix link to GitHub Discussions by @Savio-Sou in https://github.com/permissionlesstech/bitchat-android/pull/208\r\n* Feature/mentions by @fhello23 in https://github.com/permissionlesstech/bitchat-android/pull/197\r\n* Disable overlay bakground animation by @tobioyelekan in https://github.com/permissionlesstech/bitchat-android/pull/170\r\n* Disabled ripple effect from grey overlay in SidebarOverlay by @moehamade in https://github.com/permissionlesstech/bitchat-android/pull/167\r\n* Add MainViewModelTest by @tobioyelekan in https://github.com/permissionlesstech/bitchat-android/pull/163\r\n* Add Real-Time Bluetooth State Monitoring to OnboardingFlowScreen by @iAmEben in https://github.com/permissionlesstech/bitchat-android/pull/55\r\n* Add PeerManager unit tests by @shubertm in https://github.com/permissionlesstech/bitchat-android/pull/171\r\n* Make Sidebar react to the nickname and RSSI changes. by @tairrzayev in https://github.com/permissionlesstech/bitchat-android/pull/228\r\n* f-droid: add metadata folder by @mwarning in https://github.com/permissionlesstech/bitchat-android/pull/134\r\n* Add CommandSuggestionsBox quick access by @hector6872 in https://github.com/permissionlesstech/bitchat-android/pull/146\r\n* remove system messages for connect / disconnect by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/241\r\n* 0.8.2 by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/242\r\n\r\n## New Contributors\r\n* @whflima made their first contribution in https://github.com/permissionlesstech/bitchat-android/pull/201\r\n* @Savio-Sou made their first contribution in https://github.com/permissionlesstech/bitchat-android/pull/208\r\n* @fhello23 made their first contribution in https://github.com/permissionlesstech/bitchat-android/pull/197\r\n* @tobioyelekan made their first contribution in https://github.com/permissionlesstech/bitchat-android/pull/170\r\n* @iAmEben made their first contribution in https://github.com/permissionlesstech/bitchat-android/pull/55\r\n* @tairrzayev made their first contribution in https://github.com/permissionlesstech/bitchat-android/pull/228\r\n* @mwarning made their first contribution in https://github.com/permissionlesstech/bitchat-android/pull/134\r\n\r\n**Full Changelog**: https://github.com/permissionlesstech/bitchat-android/compare/0.8.1...0.8.2",
+      "assets": [
+        {
+          "filename": "bitchat-0.8.2.apk",
+          "abi": null,
+          "size_bytes": 3422012,
+          "sha256": null,
+          "mirrored": false,
+          "url": null,
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/0.8.2/bitchat-0.8.2.apk"
+        }
+      ]
+    },
+    {
+      "tag": "0.8.1",
+      "name": "APK release 0.8.1",
+      "published_at": "2025-07-31T04:56:16Z",
+      "prerelease": false,
+      "commit_sha": "9025aae3d109619293ed3279b74b1b45dcc49359",
+      "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/tag/0.8.1",
+      "notes_md": "* improve identity announcements and add ED25519 signing\r\n* ui touches\r\n\r\n**Full Changelog**: https://github.com/permissionlesstech/bitchat-android/compare/0.8...0.8.1",
+      "assets": [
+        {
+          "filename": "bitchat-0.8.1.apk",
+          "abi": null,
+          "size_bytes": 3425760,
+          "sha256": null,
+          "mirrored": false,
+          "url": null,
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/0.8.1/bitchat-0.8.1.apk"
+        }
+      ]
+    },
+    {
+      "tag": "0.8",
+      "name": "APK release 0.8",
+      "published_at": "2025-07-25T18:20:24Z",
+      "prerelease": false,
+      "commit_sha": "34d00839b25575602347a63e0ec3edfa7676bb1d",
+      "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/tag/0.8",
+      "notes_md": "# let there be noise\r\n\r\nBig update with changes to the bitchat protocol to make it more reliable and and private messages more secure. This update is a breaking change for private messages.\r\n\r\n## New\r\n- Noise XX Handshake protocol with forward secrecy\r\n- Delivery ACKs and read receipts\r\n- Chat header icons reactive\r\n- Lots of code cleanup \r\n\r\nThis release has been thoroughly tested for compatibility with bitchat for iOS version 1.1.0 (https://github.com/permissionlesstech/bitchat/commit/e57bfad8437632d06f2652310d03fdebfeed88ad)\r\n\r\n## What's Changed\r\n* Implement Noise XX Handshake Protocol for Direct Messages by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/180\r\n* NoiseProtocol update: send nonce in packet by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/181\r\n* Periodidc broadcast announce by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/183\r\n* Centralized relay manager by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/182\r\n* Handle only packets addressed to me by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/184\r\n* Refactor fingerprint manager by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/185\r\n* Fix delivery acks and read receipts by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/186\r\n* Init handshake on dm by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/187\r\n* send read receipts on focus by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/189\r\n* Dm header icons reactive by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/190\r\n* UI improvements by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/192\r\n* bump to 0.8 by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/188\r\n\r\n\r\n**Full Changelog**: https://github.com/permissionlesstech/bitchat-android/compare/0.7.2...0.8",
+      "assets": [
+        {
+          "filename": "bitchat-0.8.apk",
+          "abi": null,
+          "size_bytes": 3425764,
+          "sha256": null,
+          "mirrored": false,
+          "url": null,
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/0.8/bitchat-0.8.apk"
+        }
+      ]
+    },
+    {
+      "tag": "0.7.2",
+      "name": "APK release 0.7.2",
+      "published_at": "2025-07-20T09:24:06Z",
+      "prerelease": false,
+      "commit_sha": "9e9231353b530e1f4d3fe5c3f033d64441f3f2fe",
+      "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/tag/0.7.2",
+      "notes_md": "This is a hotfix for the battery optimization screen where the confirmation button was invisible on smaller screens. Ooops!\r\n\r\n## What's Changed\r\n* fix(onboarding): make battery screen scrollable by @anonfaded in https://github.com/permissionlesstech/bitchat-android/pull/154\r\n* bump to 0.7.2 by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/158\r\n\r\n\r\n**Full Changelog**: https://github.com/permissionlesstech/bitchat-android/compare/0.7.1...0.7.2",
+      "assets": [
+        {
+          "filename": "bitchat-0.7.2.apk",
+          "abi": null,
+          "size_bytes": 3261924,
+          "sha256": null,
+          "mirrored": false,
+          "url": null,
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/0.7.2/bitchat-0.7.2.apk"
+        }
+      ]
+    },
+    {
+      "tag": "0.7.1",
+      "name": "APK release 0.7.1",
+      "published_at": "2025-07-19T07:58:58Z",
+      "prerelease": false,
+      "commit_sha": "fa479168956b76da9010d0d25612be04bf111fed",
+      "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/tag/0.7.1",
+      "notes_md": "## Changes\r\n* check for battery optimization so we can maintain the mesh connections while in background\r\n* UI/UX fixes to improve the app experience\r\n* code health\r\n\r\n### In detail\r\n* Bugfix: Handled single or triple clicked at once instead of executing them as separate events by @moehamade in https://github.com/permissionlesstech/bitchat-android/pull/125\r\n* Refactor: Introduce MainViewModel for onboarding state management by @moehamade in https://github.com/permissionlesstech/bitchat-android/pull/129\r\n* fix: update sidebar text to use string resources by @joaodematejr in https://github.com/permissionlesstech/bitchat-android/pull/136\r\n* fix: center align toolbar item in ChatHeader by @moehamade in https://github.com/permissionlesstech/bitchat-android/pull/145\r\n* bump to 0.7.1 by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/150\r\n* Fix: wrong cursor location, added battery optimization disabling screen and styling to the slash command in input field by @anonfaded in https://github.com/permissionlesstech/bitchat-android/pull/120\r\n* refactor: remove context attribute at ChatViewModel.kt by @alpermelkeli in https://github.com/permissionlesstech/bitchat-android/pull/139\r\n* Fix content padding in messages list by @hector6872 in https://github.com/permissionlesstech/bitchat-android/pull/142\r\n* 1. remove unused methods in MainActivity.kt by @gsmnit in https://github.com/permissionlesstech/bitchat-android/pull/147\r\n* changelog update 0.7.1 by @callebtc in https://github.com/permissionlesstech/bitchat-android/pull/151\r\n\r\n## New Contributors\r\n* @moehamade made their first contribution in https://github.com/permissionlesstech/bitchat-android/pull/125\r\n* @joaodematejr made their first contribution in https://github.com/permissionlesstech/bitchat-android/pull/136\r\n* @anonfaded made their first contribution in https://github.com/permissionlesstech/bitchat-android/pull/120\r\n* @hector6872 made their first contribution in https://github.com/permissionlesstech/bitchat-android/pull/142\r\n* @gsmnit made their first contribution in https://github.com/permissionlesstech/bitchat-android/pull/147\r\n\r\n**Full Changelog**: https://github.com/permissionlesstech/bitchat-android/compare/0.7...0.7.1",
+      "assets": [
+        {
+          "filename": "bitchat-0.7.1.apk",
+          "abi": null,
+          "size_bytes": 3261924,
+          "sha256": null,
+          "mirrored": false,
+          "url": null,
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/0.7.1/bitchat-0.7.1.apk"
+        }
+      ]
+    },
+    {
+      "tag": "0.7",
+      "name": "APK release 0.7",
+      "published_at": "2025-07-13T22:32:17Z",
+      "prerelease": false,
+      "commit_sha": "013f0c00cf3ca1b7942fda6f1dac6f3e84b721f2",
+      "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/tag/0.7",
+      "notes_md": "### Added\r\n- Location services check during app startup with educational UI\r\n- Message text selection functionality in chat interface\r\n- Enhanced RSSI tracking and unread message indicators\r\n- Major Bluetooth connection architecture refactoring with dedicated managers\r\n\r\n### Fixed\r\n- **Critical**: Android-iOS message fragmentation compatibility issues\r\n  - Fixed fragment size (500→150 bytes) and ID generation for cross-platform messaging\r\n  - Ensures Android can properly communicate with iOS devices\r\n- DirectMessage notifications and text copying functionality\r\n- Smart routing optimizations (no relay loops, targeted delivery)\r\n- Build system compilation issues and null pointer exceptions\r\n\r\n### Changed\r\n- Comprehensive dependency updates (AGP 8.10.1, Kotlin 2.2.0, Compose 2025.06.01)\r\n- Optimized BLE scan intervals for better battery performance\r\n- Reduced excessive logging output\r\n\r\n### Improved\r\n- Cross-platform compatibility with iOS and Rust implementations\r\n- Connection stability through architectural improvements\r\n- Battery performance via scan duty cycling\r\n- User onboarding with location services education\r\n\r\n## New Contributors\r\n* @Comodore125 made their first contribution in https://github.com/permissionlesstech/bitchat-android/pull/93\r\n* @GUVWAF made their first contribution in https://github.com/permissionlesstech/bitchat-android/pull/57\r\n* @ShilohEye made their first contribution in https://github.com/permissionlesstech/bitchat-android/pull/48\r\n\r\n**Full Changelog**: https://github.com/permissionlesstech/bitchat-android/compare/0.6...0.7",
+      "assets": [
+        {
+          "filename": "bitchat.apk",
+          "abi": null,
+          "size_bytes": 3237464,
+          "sha256": null,
+          "mirrored": false,
+          "url": null,
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/0.7/bitchat.apk"
+        }
+      ]
+    },
+    {
+      "tag": "0.6",
+      "name": "APK release 0.6",
+      "published_at": "2025-07-12T16:50:22Z",
+      "prerelease": false,
+      "commit_sha": "0cb44974448732311af58734984f395f40c1bdc8",
+      "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/tag/0.6",
+      "notes_md": "- new icon\r\n- improve group ui\r\n- fix user favorites\r\n- ui improvements\r\n- smaller release apk\r\n- lots of external PR's (thank you for contributing, keep it coming!)\r\n\r\n## New Contributors\r\n* @prudhvir3ddy made their first contribution in https://github.com/permissionlesstech/bitchat-android/pull/30\r\n* @theArjun made their first contribution in https://github.com/permissionlesstech/bitchat-android/pull/58\r\n* @shubertm made their first contribution in https://github.com/permissionlesstech/bitchat-android/pull/62\r\n* @RanchMobile made their first contribution in https://github.com/permissionlesstech/bitchat-android/pull/49\r\n* @vashisthg made their first contribution in https://github.com/permissionlesstech/bitchat-android/pull/42\r\n* @ThatOneCalculator made their first contribution in https://github.com/permissionlesstech/bitchat-android/pull/44\r\n* @asmogo made their first contribution in https://github.com/permissionlesstech/bitchat-android/pull/71\r\n* @alpermelkeli made their first contribution in https://github.com/permissionlesstech/bitchat-android/pull/39\r\n* @maximal made their first contribution in https://github.com/permissionlesstech/bitchat-android/pull/64\r\n\r\n**Full Changelog**: https://github.com/permissionlesstech/bitchat-android/compare/0.5.1...0.6",
+      "assets": [
+        {
+          "filename": "bitchat.apk",
+          "abi": null,
+          "size_bytes": 3384780,
+          "sha256": null,
+          "mirrored": false,
+          "url": null,
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/0.6/bitchat.apk"
+        }
+      ]
+    },
+    {
+      "tag": "0.5.1",
+      "name": "APK release 0.5.1",
+      "published_at": "2025-07-10T12:18:01Z",
+      "prerelease": false,
+      "commit_sha": "f391b163ee6efa053948e93195711f39951563e4",
+      "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/tag/0.5.1",
+      "notes_md": "- check for bluetooth on startup and prompt the user to enable it ",
+      "assets": [
+        {
+          "filename": "bitchat.apk",
+          "abi": null,
+          "size_bytes": 18542696,
+          "sha256": null,
+          "mirrored": false,
+          "url": null,
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/0.5.1/bitchat.apk"
+        }
+      ]
+    },
+    {
+      "tag": "0.5",
+      "name": "APK release 0.5",
+      "published_at": "2025-07-10T11:19:04Z",
+      "prerelease": false,
+      "commit_sha": "441496e36ac578fb915d84291f8db7163a9227fd",
+      "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/tag/0.5",
+      "notes_md": "- new: onboarding screen\r\n- fix: check if all permissions were granted\r\n- fix: properly init bluetooth stack on first load\r\n\r\nNote: there is already a newer version [0.5.1 here](https://github.com/permissionlesstech/bitchat-android/releases/tag/0.5.1)",
+      "assets": [
+        {
+          "filename": "bitchat.apk",
+          "abi": null,
+          "size_bytes": 12036248,
+          "sha256": null,
+          "mirrored": false,
+          "url": null,
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/0.5/bitchat.apk"
+        }
+      ]
+    },
+    {
+      "tag": "0.4",
+      "name": "APK release 0.4",
+      "published_at": "2025-07-10T10:51:49Z",
+      "prerelease": false,
+      "commit_sha": "85acd0385514d5355257a3445b4226df3368b39b",
+      "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/tag/0.4",
+      "notes_md": "- DM view improved\r\n- Notifications working\r\n- Fav'ing is still broken",
+      "assets": [
+        {
+          "filename": "bitchat.apk",
+          "abi": null,
+          "size_bytes": 11988130,
+          "sha256": null,
+          "mirrored": false,
+          "url": null,
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/0.4/bitchat.apk"
+        }
+      ]
+    },
+    {
+      "tag": "0.3",
+      "name": "APK release 0.3",
+      "published_at": "2025-07-09T19:53:42Z",
+      "prerelease": false,
+      "commit_sha": "f78f2dbfd128b4831fcbf2906d493c25cf3861c7",
+      "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/tag/0.3",
+      "notes_md": "- Fixes Android-to-Android connections\r\n- Scan policy depends on battery state",
+      "assets": [
+        {
+          "filename": "bitchat.apk",
+          "abi": null,
+          "size_bytes": 11974730,
+          "sha256": null,
+          "mirrored": false,
+          "url": null,
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/0.3/bitchat.apk"
+        }
+      ]
+    },
+    {
+      "tag": "0.2",
+      "name": "APK release 0.2",
+      "published_at": "2025-07-09T11:07:39Z",
+      "prerelease": false,
+      "commit_sha": "fffed8f31ec6826344b0d9dbe0985677ea5c2bea",
+      "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/tag/0.2",
+      "notes_md": "Bug fixes, UI improvements, and improved BLE handling.",
+      "assets": [
+        {
+          "filename": "bitchat.apk",
+          "abi": null,
+          "size_bytes": 11959167,
+          "sha256": null,
+          "mirrored": false,
+          "url": null,
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/0.2/bitchat.apk"
+        }
+      ]
+    },
+    {
+      "tag": "0.1",
+      "name": "APK release 0.1",
+      "published_at": "2025-07-08T18:40:05Z",
+      "prerelease": false,
+      "commit_sha": "d6a4e122b4c134ae372e93a0a0a82abcaf4b9032",
+      "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/tag/0.1",
+      "notes_md": "\r\n",
+      "assets": [
+        {
+          "filename": "bitchat.apk",
+          "abi": null,
+          "size_bytes": 11913816,
+          "sha256": null,
+          "mirrored": false,
+          "url": null,
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/0.1/bitchat.apk"
+        }
+      ]
+    }
+  ]
+}

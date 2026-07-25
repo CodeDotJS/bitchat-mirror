@@ -1,0 +1,83 @@
+name: Sync bitchat-android releases
+
+on:
+  schedule:
+    # Every 6 hours
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+    inputs:
+      release:
+        description: "Optional — only upload this release tag (index still lists all)"
+        required: false
+        type: string
+      dry_run:
+        description: "Plan only (no R2 uploads)"
+        required: false
+        type: boolean
+        default: false
+
+concurrency:
+  group: bitchat-mirror-sync
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run sync
+        id: sync
+        env:
+          REPO: permissionlesstech/bitchat-android
+          MIRROR_POLICY: smart
+          MAX_BYTES: "10200547328"
+          LOG_LEVEL: INFO
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+          R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          R2_BUCKET: ${{ secrets.R2_BUCKET }}
+          R2_PUBLIC_BASE: ${{ secrets.R2_PUBLIC_BASE }}
+        run: |
+          set -euo pipefail
+          ARGS=()
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            ARGS+=(--dry-run --write-index)
+          fi
+          RELEASE="${{ inputs.release }}"
+          if [ -n "${RELEASE}" ]; then
+            ARGS+=(--release "${RELEASE}")
+          fi
+          python -m sync.main "${ARGS[@]}"
+
+      - name: Commit public/releases.json
+        # Commit even if some assets failed (sync still writes a complete index).
+        # Skip only when the job was cancelled.
+        if: ${{ !cancelled() }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/releases.json
+          if git diff --staged --quiet; then
+            echo "public/releases.json unchanged — nothing to commit"
+            exit 0
+          fi
+          # Do NOT include [skip ci] — Vercel git integration must see this commit.
+          git commit -m "chore: update mirrored release index"
+          git push

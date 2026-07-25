@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>bitchat — unofficial Android mirror</title>
+    <meta
+      name="description"
+      content="An unofficial mirror for bitchat Android APKs. Peer-to-peer messaging that works when platforms and governments try to shut it down."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Syne:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <header class="site-header">
+        <a class="brand" href="/">bitchat</a>
+        <nav class="nav" aria-label="Primary">
+          <a href="/" aria-current="page">Download</a>
+          <a href="/archive.html">Archive</a>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="kicker">Unofficial mirror · offline-first mesh</p>
+          <h1>bitchat</h1>
+          <p class="hero-lede">
+            App stores can be blocked. Phones talking over Bluetooth are much harder to
+            silence. This mirror keeps bitchat’s Android APKs reachable when upstream is
+            throttled, taken down, or censored.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-signal" href="#download">Download latest APK</a>
+            <a class="btn btn-ghost" href="/archive.html">All releases</a>
+          </div>
+        </div>
+        <div class="mesh-frame" aria-hidden="true">
+          <canvas id="mesh" width="800" height="480"></canvas>
+          <p class="mesh-label" id="mesh-caption">ble mesh · peer to peer</p>
+        </div>
+      </section>
+
+      <section class="section" id="download" aria-labelledby="download-heading">
+        <div class="section-head">
+          <h2 id="download-heading">Download</h2>
+          <span class="aside" id="download-aside">Latest stable build</span>
+        </div>
+        <div class="panel">
+          <div class="panel-body" id="latest-root">
+            <div class="status" role="status">
+              <p class="title">Loading releases</p>
+              <p>Fetching the mirror index…</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="guide-heading">
+        <div class="section-head">
+          <h2 id="guide-heading">Install &amp; verify</h2>
+        </div>
+        <div class="guide-grid">
+          <div class="guide-card">
+            <h3>Sideload</h3>
+            <ol class="steps">
+              <li>
+                Allow your browser to install apps:
+                <span class="mono">Settings → Apps → Special app access → Install unknown apps</span>.
+              </li>
+              <li>Install the APK, then open bitchat.</li>
+              <li>
+                Grant Nearby devices / Bluetooth. Location may be requested — that is an
+                Android BLE scanning rule, not GPS tracking by the app.
+              </li>
+            </ol>
+          </div>
+          <div class="guide-card">
+            <h3>Verify</h3>
+            <ol class="steps">
+              <li>Copy the SHA-256 shown next to the file (or open checksums).</li>
+              <li>Run <span class="mono">sha256sum your.apk</span> and compare.</li>
+              <li>
+                Source for each build is the linked upstream commit. bitchat is GPLv3 —
+                you can inspect and rebuild it.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="site-footer">
+      <div class="shell">
+        <div class="footer-col">
+          <p class="footer-brand">bitchat</p>
+          <p>
+            Unofficial APK mirror. Not affiliated with the upstream project. Built so the
+            app stays reachable when censorship or outages get in the way.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h3>Upstream</h3>
+          <ul>
+            <li>
+              <a href="https://github.com/permissionlesstech/bitchat-android"
+                >Android repository</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/permissionlesstech/bitchat-android/releases"
+                >GitHub releases</a
+              >
+            </li>
+            <li><a href="/archive.html">This mirror’s archive</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>License</h3>
+          <ul>
+            <li>
+              <a href="https://www.gnu.org/licenses/gpl-3.0.html">GNU GPLv3</a>
+            </li>
+            <li>Corresponding source = tagged commit on each release</li>
+          </ul>
+        </div>
+      </div>
+      <div class="shell footer-base">
+        Redistributing binaries obliges us to point you at the source. That is the point
+        of free software — and of this mirror.
+      </div>
+    </footer>
+
+    <script type="module">
+      import {
+        assetRowHtml,
+        bindCopyButtons,
+        commitUrl,
+        escapeHtml,
+        fetchIndex,
+        formatDate,
+        latestRelease,
+        renderState,
+        UPSTREAM_RELEASES,
+      } from "/app.js";
+      import { startMesh } from "/mesh.js";
+
+      startMesh(document.getElementById("mesh"), {
+        caption: document.getElementById("mesh-caption"),
+      });
+
+      const root = document.getElementById("latest-root");
+      const aside = document.getElementById("download-aside");
+      bindCopyButtons(root);
+
+      try {
+        const index = await fetchIndex();
+        const release = latestRelease(index);
+        if (!release) {
+          renderState(root, "empty");
+        } else {
+          aside.textContent = `v${release.tag} · ${formatDate(release.published_at)}`;
+          const assets = release.assets || [];
+          const rows = assets
+            .map((a) => assetRowHtml(a, release, index.public_base))
+            .join("");
+          const sha12 = escapeHtml(
+            (release.commit_sha || "").slice(0, 12) || "upstream",
+          );
+          root.innerHTML = `
+            <div class="meta-row">
+              <span>Tag <strong>${escapeHtml(release.tag)}</strong></span>
+              <span>${escapeHtml(formatDate(release.published_at))}</span>
+              ${release.prerelease ? '<span class="badge">Prerelease</span>' : ""}
+              <a href="${escapeHtml(commitUrl(index, release))}">commit ${sha12}</a>
+              <a href="${escapeHtml(release.upstream_url)}">Upstream tag</a>
+            </div>
+            <ul class="asset-list">${
+              rows ||
+              `<li class="status"><p>No APK assets. See <a href="${UPSTREAM_RELEASES}">upstream</a>.</p></li>`
+            }</ul>
+          `;
+        }
+      } catch (err) {
+        renderState(root, "error", err.message || String(err));
+      }
+    </script>
+  </body>
+</html>

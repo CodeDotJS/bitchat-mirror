@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Archive — bitchat Android mirror</title>
+    <meta
+      name="description"
+      content="Every bitchat-android release in the unofficial mirror index, including upstream-only builds."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Syne:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <header class="site-header">
+        <a class="brand" href="/">bitchat</a>
+        <nav class="nav" aria-label="Primary">
+          <a href="/">Download</a>
+          <a href="/archive.html" aria-current="page">Archive</a>
+        </nav>
+      </header>
+
+      <section class="page-hero">
+        <h1>Archive</h1>
+        <p class="lede">
+          Every upstream release, newest first. Mirrored builds download from this site;
+          the rest stay linked to GitHub so the record stays complete.
+        </p>
+      </section>
+
+      <div class="filters" id="filters" hidden>
+        <label class="field">
+          Search
+          <input id="q" type="search" placeholder="Tag or notes" autocomplete="off" />
+        </label>
+        <label class="field">
+          ABI
+          <select id="abi">
+            <option value="">Any</option>
+            <option value="arm64-v8a">arm64-v8a</option>
+            <option value="armeabi-v7a">armeabi-v7a</option>
+            <option value="x86_64">x86_64</option>
+            <option value="x86">x86</option>
+            <option value="universal">universal</option>
+          </select>
+        </label>
+        <label class="field">
+          Channel
+          <select id="channel">
+            <option value="">All</option>
+            <option value="stable">Stable</option>
+            <option value="prerelease">Prerelease</option>
+          </select>
+        </label>
+      </div>
+
+      <p class="count" id="count" hidden></p>
+      <div id="archive">
+        <div class="status" role="status">
+          <p class="title">Loading releases</p>
+          <p>Fetching the mirror index…</p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="shell">
+        <div class="footer-col">
+          <p class="footer-brand">bitchat</p>
+          <p>
+            Unofficial APK mirror. Not affiliated with the upstream project. Built so the
+            app stays reachable when censorship or outages get in the way.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h3>Upstream</h3>
+          <ul>
+            <li>
+              <a href="https://github.com/permissionlesstech/bitchat-android"
+                >Android repository</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/permissionlesstech/bitchat-android/releases"
+                >GitHub releases</a
+              >
+            </li>
+            <li><a href="/">Download latest</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>License</h3>
+          <ul>
+            <li>
+              <a href="https://www.gnu.org/licenses/gpl-3.0.html">GNU GPLv3</a>
+            </li>
+            <li>Corresponding source = tagged commit on each release</li>
+          </ul>
+        </div>
+      </div>
+      <div class="shell footer-base">
+        Redistributing binaries obliges us to point you at the source. That is the point
+        of free software — and of this mirror.
+      </div>
+    </footer>
+
+    <script type="module">
+      import {
+        assetRowHtml,
+        bindCopyButtons,
+        commitUrl,
+        escapeHtml,
+        fetchIndex,
+        formatBytes,
+        formatDate,
+        renderMarkdownSafe,
+        renderState,
+      } from "/app.js";
+
+      const root = document.getElementById("archive");
+      const filtersEl = document.getElementById("filters");
+      const countEl = document.getElementById("count");
+      const qEl = document.getElementById("q");
+      const abiEl = document.getElementById("abi");
+      const channelEl = document.getElementById("channel");
+
+      bindCopyButtons(root);
+
+      /** @type {object | null} */
+      let index = null;
+
+      function releaseMirrored(release) {
+        return (release.assets || []).some((a) => a.mirrored && a.url);
+      }
+
+      function matches(release) {
+        const q = qEl.value.trim().toLowerCase();
+        const abi = abiEl.value;
+        const channel = channelEl.value;
+
+        if (channel === "stable" && release.prerelease) return false;
+        if (channel === "prerelease" && !release.prerelease) return false;
+
+        if (abi) {
+          const hasAbi = (release.assets || []).some((a) => a.abi === abi);
+          if (!hasAbi) return false;
+        }
+
+        if (q) {
+          const hay =
+            `${release.tag} ${release.name || ""} ${release.notes_md || ""}`.toLowerCase();
+          if (!hay.includes(q)) return false;
+        }
+        return true;
+      }
+
+      function render() {
+        if (!index) return;
+        const releases = (index.releases || []).filter(matches);
+        countEl.hidden = false;
+        countEl.textContent = `${releases.length} of ${index.releases.length} · updated ${formatDate(index.generated_at)}`;
+
+        if (!releases.length) {
+          root.innerHTML = `<div class="status panel"><div class="panel-body"><p class="title">No matches</p><p>Widen the filters or clear the search.</p></div></div>`;
+          return;
+        }
+
+        root.innerHTML = `<ul class="release-list">${releases
+          .map((release) => {
+            const assets = release.assets || [];
+            const total = assets.reduce((s, a) => s + (a.size_bytes || 0), 0);
+            const mirrored = releaseMirrored(release);
+            const rows = assets
+              .map((a) => assetRowHtml(a, release, index.public_base))
+              .join("");
+            return `<li class="release-item${mirrored ? "" : " dim"}">
+              <details>
+                <summary class="release-summary">
+                  <div class="release-head">
+                    <span class="release-tag">${escapeHtml(release.tag)}</span>
+                    ${release.prerelease ? '<span class="badge">Prerelease</span>' : ""}
+                    ${mirrored ? "" : '<span class="badge">Upstream only</span>'}
+                  </div>
+                  <div class="release-stats">
+                    <span>${formatDate(release.published_at)}</span>
+                    <span>${assets.length} APKs</span>
+                    <span>${formatBytes(total)}</span>
+                    <a href="${escapeHtml(release.upstream_url)}" onclick="event.stopPropagation()">Upstream</a>
+                    <a href="${commitUrl(index, release)}" onclick="event.stopPropagation()">Commit</a>
+                  </div>
+                </summary>
+                <div class="release-body">
+                  <div class="notes">${renderMarkdownSafe(release.notes_md || "")}</div>
+                  <ul class="asset-list">${rows}</ul>
+                </div>
+              </details>
+            </li>`;
+          })
+          .join("")}</ul>`;
+      }
+
+      try {
+        index = await fetchIndex();
+        if (!index.releases?.length) {
+          renderState(root, "empty");
+        } else {
+          filtersEl.hidden = false;
+          render();
+        }
+      } catch (err) {
+        renderState(root, "error", err.message || String(err));
+      }
+
+      for (const el of [qEl, abiEl, channelEl]) {
+        el.addEventListener("input", render);
+        el.addEventListener("change", render);
+      }
+    </script>
+  </body>
+</html>

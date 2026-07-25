@@ -1,0 +1,10 @@
+# Runtime — needed for python -m sync.main
+httpx==0.28.1
+boto3==1.38.36
+python-dotenv==1.1.1
+
+# Dev / CI — tests and lint
+pytest==8.4.1
+respx==0.22.0
+ruff==0.12.2
+moto[s3]==5.1.6
