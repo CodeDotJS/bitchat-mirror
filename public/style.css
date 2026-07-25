@@ -87,14 +87,17 @@ a:hover {
 
 .brand {
   display: inline-flex;
+  flex-direction: row;
   align-items: center;
-  gap: 0.55rem;
+  gap: 0.4rem;
   font-family: var(--font);
   font-weight: 800;
   font-size: 1.35rem;
   letter-spacing: -0.04em;
+  line-height: 1;
   text-decoration: none;
   color: var(--ink);
+  white-space: nowrap;
 }
 
 .brand:hover {
@@ -103,10 +106,15 @@ a:hover {
 
 .brand-mark {
   display: block;
-  width: 1.75rem;
-  height: 1.75rem;
+  width: 1.5rem;
+  height: 1.5rem;
   border-radius: 2px;
-  flex-shrink: 0;
+  flex: 0 0 auto;
+}
+
+.brand-text {
+  display: block;
+  line-height: 1;
 }
 
 .nav {
@@ -422,21 +430,24 @@ a:hover {
 }
 
 /* —— Guide grid —— */
-/* —— Why / anti-censorship —— */
-.why-panel {
-  background: var(--white);
-  border: 1px solid var(--line-ink);
-  padding: var(--space-4);
+/* —— Why page —— */
+.page-hero .kicker {
+  margin: 0 0 0.75rem;
 }
 
-.why-lead {
-  margin: 0 0 var(--space-4);
-  font-size: 1.15rem;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-  line-height: 1.45;
-  color: var(--ink);
-  max-width: 46rem;
+.why-prose {
+  max-width: 40rem;
+}
+
+.why-prose p {
+  margin: 0 0 1rem;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--ink-2);
+}
+
+.why-prose p:last-child {
+  margin-bottom: 0;
 }
 
 .fact-grid {
@@ -452,21 +463,15 @@ a:hover {
   }
 }
 
-@media (min-width: 960px) {
-  .fact-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
 .fact {
-  border: 1px solid var(--line);
-  background: var(--paper);
-  padding: var(--space-3);
+  border: 1px solid var(--line-ink);
+  background: var(--white);
+  padding: var(--space-4);
   min-height: 100%;
 }
 
 .fact-label {
-  margin: 0 0 0.35rem;
+  margin: 0 0 0.4rem;
   font-family: var(--mono);
   font-size: 0.65rem;
   font-weight: 500;
@@ -476,9 +481,9 @@ a:hover {
 }
 
 .fact-value {
-  margin: 0 0 0.45rem;
+  margin: 0 0 0.55rem;
   font-family: var(--font);
-  font-size: 1.65rem;
+  font-size: 2rem;
   font-weight: 800;
   letter-spacing: -0.04em;
   line-height: 1;
@@ -487,28 +492,13 @@ a:hover {
 
 .fact-note {
   margin: 0;
-  font-size: 0.88rem;
+  font-size: 0.92rem;
   line-height: 1.45;
   color: var(--ink-2);
 }
 
-.why-body {
-  border-top: 1px solid var(--line);
-  padding-top: var(--space-4);
-}
-
-.why-body p {
-  margin: 0 0 0.9rem;
-  color: var(--ink-2);
-  max-width: 46rem;
-}
-
-.why-body p:last-child {
-  margin-bottom: 0;
-}
-
 .why-cite {
-  font-family: var(--mono);
+  font-family: var(--mono) !important;
   font-size: 0.75rem !important;
   color: var(--mute) !important;
 }
@@ -616,12 +606,18 @@ a:hover {
 }
 
 .footer-brand {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.4rem;
   margin: 0 0 0.5rem;
   font-family: var(--font);
   font-size: 1.5rem;
   font-weight: 800;
   letter-spacing: -0.04em;
+  line-height: 1;
   color: var(--ink);
+  white-space: nowrap;
 }
 
 .footer-col h3 {
