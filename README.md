@@ -10,6 +10,17 @@
   </p>
 </div>
 
+<div align="center">
+   <blockquote class="twitter-tweet">
+      <p lang="en" dir="ltr">the government of india does not like technologies like bitchat and wants it taken down <a href="https://t.co/gjzMg1NGCi">pic.twitter.com/gjzMg1NGCi</a></p>
+      &mdash; jack (@jack) <a href="https://x.com/jack/status/2080565084586135773?ref_src=twsrc%5Etfw">July 24, 2026</a>
+   </blockquote>
+   <script async src="https://platform.x.com/widgets.js" charset="utf-8"></script>
+   <img src="media/96012-pepe-toilet.gif">
+</div>
+
+<br>
+
 When install paths get pulled offline, the binaries still need somewhere to live. This repo keeps them on Cloudflare R2 and serves a static download site on Vercel — no app server, no database, no serverless functions. Browsers fetch APKs straight from R2.
 
 bitchat is **GPLv3**. Every mirrored release carries its upstream tag and commit SHA so corresponding source stays findable. This project is **not affiliated** with upstream.
