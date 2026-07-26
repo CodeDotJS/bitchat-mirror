@@ -162,6 +162,7 @@ venv.bak/
 # Local research dossier + private planning notes (not for remote)
 research/
 overview.md
+docs/
 
 # Spyder project settings
 .spyderproject
