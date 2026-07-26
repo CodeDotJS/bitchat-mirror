@@ -43,6 +43,8 @@ body {
   line-height: 1.55;
   color: var(--ink);
   background:
+    radial-gradient(ellipse 90% 50% at 8% -10%, color-mix(in srgb, var(--alert) 12%, transparent), transparent 55%),
+    radial-gradient(ellipse 70% 40% at 100% 8%, color-mix(in srgb, var(--accent) 10%, transparent), transparent 50%),
     linear-gradient(180deg, var(--paper) 0%, var(--paper-2) 100%);
 }
 
@@ -433,13 +435,6 @@ a:hover {
 /* —— Why page —— */
 .page-hero .kicker {
   margin: 0 0 0.75rem;
-}
-
-.page-why {
-  background:
-    radial-gradient(ellipse 90% 50% at 8% -10%, color-mix(in srgb, var(--alert) 12%, transparent), transparent 55%),
-    radial-gradient(ellipse 70% 40% at 100% 8%, color-mix(in srgb, var(--accent) 10%, transparent), transparent 50%),
-    linear-gradient(180deg, var(--paper) 0%, var(--paper-2) 100%);
 }
 
 .why-hero {
