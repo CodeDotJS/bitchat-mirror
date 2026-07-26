@@ -227,3 +227,4 @@ __marimo__/
 # Cursor
 .cursor/
 .cursorignore
+.vercel
