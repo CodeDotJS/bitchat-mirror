@@ -14,7 +14,9 @@
   --radius: 0;
   --max: 72rem;
   --content: 42rem;
-  --font: "Syne", "Archivo", sans-serif;
+  /* Roles: display = headings/brand/big stats; body = paragraphs/UI; mono = labels/code */
+  --font: "IBM Plex Sans", "Helvetica Neue", sans-serif;
+  --font-display: "Black Ops One", "IBM Plex Sans", sans-serif;
   --mono: "IBM Plex Mono", "JetBrains Mono", monospace;
   --space-1: 0.25rem;
   --space-2: 0.5rem;
@@ -40,12 +42,24 @@ body {
   min-height: 100vh;
   font-family: var(--font);
   font-size: 1.0625rem;
-  line-height: 1.55;
+  font-weight: 400;
+  line-height: 1.65;
   color: var(--ink);
   background:
     radial-gradient(ellipse 90% 50% at 8% -10%, color-mix(in srgb, var(--alert) 12%, transparent), transparent 55%),
     radial-gradient(ellipse 70% 40% at 100% 8%, color-mix(in srgb, var(--accent) 10%, transparent), transparent 50%),
     linear-gradient(180deg, var(--paper) 0%, var(--paper-2) 100%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 img,
@@ -92,12 +106,13 @@ a:hover {
   flex-direction: row;
   align-items: center;
   gap: 0.4rem;
-  font-family: var(--font);
-  font-weight: 800;
-  font-size: 1.35rem;
-  letter-spacing: -0.04em;
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 1.25rem;
+  letter-spacing: 0.04em;
   line-height: 1;
   text-decoration: none;
+  text-transform: uppercase;
   color: var(--ink);
   white-space: nowrap;
 }
@@ -122,6 +137,7 @@ a:hover {
 .nav {
   display: flex;
   gap: var(--space-4);
+  font-family: var(--font);
   font-size: 0.95rem;
   font-weight: 600;
 }
@@ -177,17 +193,20 @@ a:hover {
 
 .hero h1 {
   margin: 0;
-  font-size: clamp(3rem, 10vw, 5.5rem);
-  font-weight: 800;
-  letter-spacing: -0.06em;
-  line-height: 0.88;
+  font-family: var(--font-display);
+  font-size: clamp(2.6rem, 9vw, 4.75rem);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 0.95;
   color: var(--ink);
 }
 
 .hero-lede {
   margin: 0;
+  font-family: var(--font);
   font-size: 1.125rem;
-  line-height: 1.5;
+  font-weight: 400;
+  line-height: 1.6;
   color: var(--ink-2);
   max-width: 32rem;
 }
@@ -248,9 +267,10 @@ a:hover {
 
 .section-head h2 {
   margin: 0;
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--mute);
 }
@@ -381,8 +401,8 @@ a:hover {
   padding: 0.7rem 1.1rem;
   font-family: var(--font);
   font-size: 0.95rem;
-  font-weight: 700;
-  letter-spacing: -0.01em;
+  font-weight: 600;
+  letter-spacing: 0;
   text-decoration: none;
   cursor: pointer;
   white-space: nowrap;
@@ -454,6 +474,11 @@ a:hover {
 .why-section:nth-of-type(4) { animation-delay: 120ms; }
 .why-section:nth-of-type(5) { animation-delay: 160ms; }
 .why-section:nth-of-type(6) { animation-delay: 200ms; }
+.why-section:nth-of-type(7) { animation-delay: 240ms; }
+.why-section:nth-of-type(8) { animation-delay: 280ms; }
+.why-section:nth-of-type(9) { animation-delay: 320ms; }
+.why-section:nth-of-type(10) { animation-delay: 360ms; }
+.why-section:nth-of-type(11) { animation-delay: 400ms; }
 
 @keyframes why-in {
   from {
@@ -511,10 +536,11 @@ a.fn:hover {
 
 .why-doc-title {
   margin: 0 0 var(--space-3);
-  font-size: clamp(1.35rem, 2.4vw, 1.85rem);
-  font-weight: 800;
-  letter-spacing: -0.035em;
-  line-height: 1.15;
+  font-family: var(--font-display);
+  font-size: clamp(1.25rem, 2.2vw, 1.7rem);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
   color: var(--ink);
 }
 
@@ -536,9 +562,9 @@ a.fn:hover {
   margin: 0 0 0.75rem;
   font-family: var(--font);
   font-size: clamp(1.2rem, 2.2vw, 1.55rem);
-  font-weight: 700;
-  letter-spacing: -0.03em;
-  line-height: 1.35;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.4;
   color: var(--ink);
 }
 
@@ -625,11 +651,11 @@ a.fn:hover {
 
 .stat-value {
   margin: 0 0 0.55rem;
-  font-family: var(--font);
-  font-size: clamp(2rem, 4vw, 2.65rem);
-  font-weight: 800;
-  letter-spacing: -0.05em;
-  line-height: 0.95;
+  font-family: var(--font-display);
+  font-size: clamp(1.85rem, 3.6vw, 2.4rem);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 1;
   color: var(--alert);
   font-variant-numeric: tabular-nums;
 }
@@ -644,8 +670,10 @@ a.fn:hover {
 
 .stat-label {
   margin: 0;
-  font-size: 0.88rem;
-  line-height: 1.45;
+  font-family: var(--font);
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.5;
   color: var(--ink-2);
 }
 
@@ -697,9 +725,11 @@ a.fn:hover {
 .why-timeline strong {
   display: block;
   margin: 0 0 0.4rem;
+  font-family: var(--font);
   font-size: 1.05rem;
-  font-weight: 800;
-  letter-spacing: -0.02em;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  text-transform: none;
   color: var(--ink);
 }
 
@@ -728,17 +758,20 @@ a.fn:hover {
 
 .why-prose .why-subhead {
   margin: 0 0 0.85rem;
-  font-family: var(--font);
-  font-size: 1.2rem;
-  font-weight: 800;
-  letter-spacing: -0.03em;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
   color: var(--ink);
 }
 
 .why-prose p {
   margin: 0 0 1rem;
-  font-size: 1.02rem;
-  line-height: 1.65;
+  font-family: var(--font);
+  font-size: 1.05rem;
+  font-weight: 400;
+  line-height: 1.7;
   color: var(--ink-2);
 }
 
@@ -917,7 +950,8 @@ a.fn:hover {
 }
 
 .compare-list strong {
-  font-weight: 800;
+  font-family: var(--font);
+  font-weight: 700;
   color: var(--alert);
 }
 
@@ -1058,10 +1092,11 @@ a.fn:hover {
 
 .why-act > p {
   margin: 0 0 var(--space-3);
-  font-size: 1.2rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  line-height: 1.45;
+  font-family: var(--font);
+  font-size: 1.15rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1.6;
   color: var(--ink);
 }
 
@@ -1070,6 +1105,17 @@ a.fn:hover {
   font-weight: 500 !important;
   color: var(--ink-2) !important;
   margin-bottom: var(--space-4) !important;
+}
+
+.why-integrity {
+  margin: 0 0 var(--space-4);
+  max-width: 40rem;
+  font-family: var(--font);
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.55;
+  letter-spacing: -0.01em;
+  color: var(--ink);
 }
 
 .why-sources .source-list {
@@ -1132,9 +1178,9 @@ a.fn:hover {
 
 .guide-card h3 {
   margin: 0 0 var(--space-3);
-  font-size: 1.15rem;
-  font-weight: 800;
-  letter-spacing: -0.03em;
+  font-size: 1.05rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
 }
 
 .steps {
@@ -1174,7 +1220,8 @@ a.fn:hover {
 
 .status .title {
   margin: 0 0 0.35rem;
-  font-weight: 800;
+  font-family: var(--font);
+  font-weight: 700;
   letter-spacing: -0.02em;
 }
 
@@ -1220,22 +1267,20 @@ a.fn:hover {
   align-items: center;
   gap: 0.4rem;
   margin: 0 0 0.5rem;
-  font-family: var(--font);
-  font-size: 1.5rem;
-  font-weight: 800;
-  letter-spacing: -0.04em;
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
   line-height: 1;
+  text-transform: uppercase;
   color: var(--ink);
   white-space: nowrap;
 }
 
 .footer-col h3 {
   margin: 0 0 0.75rem;
-  font-family: var(--mono);
-  font-size: 0.68rem;
-  font-weight: 500;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
   color: var(--mute);
 }
 
@@ -1286,15 +1331,19 @@ a.fn:hover {
 
 .page-hero h1 {
   margin: 0 0 0.5rem;
-  font-size: clamp(2.4rem, 8vw, 3.8rem);
-  font-weight: 800;
-  letter-spacing: -0.05em;
-  line-height: 0.95;
+  font-family: var(--font-display);
+  font-size: clamp(2.1rem, 7vw, 3.4rem);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 1.05;
 }
 
 .page-hero .lede {
   margin: 0;
   max-width: 34rem;
+  font-family: var(--font);
+  font-weight: 400;
+  line-height: 1.65;
   color: var(--ink-2);
 }
 
@@ -1428,10 +1477,9 @@ select:focus {
 .notes h2,
 .notes h3 {
   margin: 0.7rem 0 0.3rem;
-  font-size: 0.95rem;
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  text-transform: none;
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
   color: var(--ink);
 }
 
