@@ -1314,13 +1314,43 @@ a.fn:hover {
   border-bottom-color: var(--accent);
 }
 
-.footer-base {
+.site-footer .shell.footer-base {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem 1.5rem;
+  grid-template-columns: none;
   margin-top: var(--space-5);
   padding-top: var(--space-3);
   border-top: 1px solid var(--line);
   font-family: var(--mono);
   font-size: 0.7rem;
+  line-height: 1.45;
   color: var(--mute);
+}
+
+.footer-base p {
+  margin: 0;
+  max-width: 42rem;
+}
+
+.footer-credit {
+  flex: 0 0 auto;
+  margin-left: auto;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.footer-credit a {
+  color: var(--ink-2);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.footer-credit a:hover {
+  color: var(--alert);
+  border-bottom-color: var(--alert);
 }
 
 /* —— Archive —— */
