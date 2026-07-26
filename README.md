@@ -30,7 +30,7 @@ GitHub Actions (cron / manual)
 
 | Piece | Role | Cost target |
 |---|---|---|
-| GitHub Actions | Cron every 6 hours + `workflow_dispatch` | Free tier |
+| GitHub Actions | Cron weekly + `workflow_dispatch` | Free tier |
 | Cloudflare R2 | Object storage for APKs (≤ ~9.5 GiB budget) | Free tier (0 egress) |
 | Vercel | Static hosting of `public/` | Hobby (non-commercial) |
 
@@ -235,7 +235,7 @@ Repo → **Settings → Secrets and variables → Actions**. Add:
 
 On success the workflow commits `public/releases.json` when it changed (message without `[skip ci]` so Vercel redeploys).
 
-Schedule: every **6 hours** (`0 */6 * * *`), plus manual `workflow_dispatch`.
+Schedule: weekly on **Sundays 06:00 UTC** (`0 6 * * 0`), plus manual `workflow_dispatch`.
 
 ---
 
