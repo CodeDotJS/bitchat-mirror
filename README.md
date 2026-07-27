@@ -18,7 +18,7 @@
 >
 > — jack (@jack) <a href="https://x.com/jack/status/2080565084586135773">July 24, 2026</a>
 
-<img src="media/96012-pepe-toilet.gif" alt="Pepe">
+<img src="media/743359-pepe-proud.png" alt="Pepe">
 
 </div>
 
