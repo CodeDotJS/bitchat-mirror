@@ -281,6 +281,31 @@ a:hover {
   color: var(--mute);
 }
 
+/* —— How this works —— */
+.how-lede {
+  margin: 0 0 var(--space-4);
+  max-width: 36rem;
+  color: var(--ink-2);
+}
+
+.how-board {
+  border: 1px solid var(--line-ink);
+  background: var(--white);
+  padding: var(--space-4);
+  overflow-x: auto;
+}
+
+.how-board .mermaid {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.how-board .mermaid svg {
+  max-width: 100%;
+  height: auto;
+}
+
 .panel {
   background: var(--white);
   border: 1px solid var(--line-ink);
