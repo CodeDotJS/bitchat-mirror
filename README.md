@@ -10,13 +10,16 @@
   </p>
 </div>
 
+<br>
+
 <div align="center">
-   <blockquote class="twitter-tweet">
-      <p lang="en" dir="ltr">the government of india does not like technologies like bitchat and wants it taken down <a href="https://t.co/gjzMg1NGCi">pic.twitter.com/gjzMg1NGCi</a></p>
-      &mdash; jack (@jack) <a href="https://x.com/jack/status/2080565084586135773?ref_src=twsrc%5Etfw">July 24, 2026</a>
-   </blockquote>
-   <script async src="https://platform.x.com/widgets.js" charset="utf-8"></script>
-   <img src="media/96012-pepe-toilet.gif">
+
+> the government of india does not like technologies like bitchat and wants it taken down
+>
+> — jack (@jack) <a href="https://x.com/jack/status/2080565084586135773">July 24, 2026</a>
+
+<img src="media/96012-pepe-toilet.gif" alt="Pepe">
+
 </div>
 
 <br>
