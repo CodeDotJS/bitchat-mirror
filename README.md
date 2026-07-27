@@ -38,7 +38,7 @@ flowchart TB
 
   subgraph job["① Mirror job"]
     direction LR
-    GA["GitHub Actions<br/>weekly · manual"]
+    GA["GitHub Actions<br/>weekly"]
     SYNC["Python sync/<br/>policy · SHA-256 · budget"]
     GA --> SYNC
   end
@@ -79,7 +79,7 @@ flowchart TB
 
 | Piece | Job |
 |---|---|
-| **GitHub Actions** | Weekly cron + manual sync |
+| **GitHub Actions** | Weekly cron |
 | **Cloudflare R2** | Holds APKs (free-tier budget, ~9.5 GiB) |
 | **Vercel** | Hosts the static UI only |
 
