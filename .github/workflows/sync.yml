@@ -3,8 +3,7 @@ name: Sync bitchat-android releases
 # Register/refresh on push so Actions picks up this workflow after repo recreate.
 on:
   schedule:
-    # Weekly — Sundays 06:00 UTC (manual Run workflow still available anytime)
-    - cron: "0 6 * * 0"
+    - cron: "*/15 * * * *"
   workflow_dispatch:
     inputs:
       release:
