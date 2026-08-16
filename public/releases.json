@@ -1,12 +1,59 @@
 {
-  "generated_at": "2026-08-09T06:36:28Z",
+  "generated_at": "2026-08-16T06:21:04Z",
   "repo": "permissionlesstech/bitchat-android",
   "public_base": "https://pub-1c78deb4bb3b40fabe85c934017966a1.r2.dev",
   "budget": {
-    "used_bytes": 652232214,
+    "used_bytes": 750507127,
     "max_bytes": 10200547328
   },
   "releases": [
+    {
+      "tag": "v2.0.1",
+      "name": "Bitchat Android 2.0.1",
+      "published_at": "2026-08-11T21:57:00Z",
+      "prerelease": false,
+      "commit_sha": "93e9594bad3e537b4ec6fd096c0fde7533f22e74",
+      "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/tag/v2.0.1",
+      "notes_md": "## Bitchat Android 2.0.1\r\n\r\n### Highlights\r\n\r\n- **Bitchat for Wear OS:** join the nearby mesh from your watch, use public chat and encrypted direct messages, browse People, manage favorites and verification, receive notifications, record voice notes, and receive images and files.\r\n- **New chat styles:** choose the classic Matrix layout or peer-colored message bubbles, including bubble-aware media, timestamps, and delivery indicators.\r\n- **Live push-to-talk:** stream voice in public channels and encrypted direct messages on Android and Wear OS, with improved recording feedback, waveforms, haptics, and slide-to-cancel controls.\r\n- **Cashu support:** recognize and preview Cashu eCash tokens, use `/pay`, and redeem with a compatible external wallet or web flow. Cashu tokens are bearer instruments; anyone who obtains a token may be able to redeem it.\r\n- **Persistent private conversations:** keep conversation history, unread state, aliases, favorites, and previews across restarts, with clearer controls for deleting conversations.\r\n- **Offline geohash globe:** explore geohash channels with a native animated 3D globe, country borders, cities, polar coverage, and adjustable render quality.\r\n- **Language picker:** change the app language from within Bitchat, with expanded translations.\r\n- **Local-first APK sharing and updates:** share an installed APK nearby and resume signature-verified update downloads with clearer progress and rate-limit handling.\r\n- **Reliability and privacy:** stronger queued-message delivery and ordering, Noise session recovery and identity binding, more reliable receipts and peer lifecycle handling, safer Wi-Fi Direct cleanup, bounded payload processing, quieter sensitive logging, and a more complete panic wipe of in-memory networking state.\r\n\r\n### First reproducible full-app release\r\n\r\nThis is Bitchat Android's first reproducible full-app release. The unsigned phone and Wear OS APKs and Android App Bundles were built twice in independent GitHub Actions jobs using the pinned container environment, and every canonical byte matched before the release artifacts were promoted for local signing.\r\n\r\nThe release includes the signed phone and Wear OS APKs, the signed Play upload bundles, `BITCHAT_BUILDINFO.json`, the attested `BITCHAT_SHA256SUMS.unsigned` manifest, and the final `BITCHAT_SHA256SUMS`. The canonical unsigned binaries are intentionally not attached; their exact hashes are committed by the attested unsigned manifest and they can be rebuilt from the signed source tag. The signed APK and AAB payloads were checked against those canonical unsigned builds before publication.\r\n\r\nTo rebuild and verify everything from source (requires Git, GitHub CLI, Docker with Linux/amd64 support, and 16 GiB of memory recommended for Docker):\r\n\r\n```bash\r\ngit clone https://github.com/permissionlesstech/bitchat-android.git\r\ncd bitchat-android\r\ngit checkout v2.0.1\r\ngh release download v2.0.1 --pattern 'BITCHAT_BUILDINFO.json' --pattern 'BITCHAT_SHA256SUMS*' --dir .reproducible-build/release-metadata-v2.0.1\r\ngh attestation verify .reproducible-build/release-metadata-v2.0.1/BITCHAT_BUILDINFO.json --repo permissionlesstech/bitchat-android\r\ngh attestation verify .reproducible-build/release-metadata-v2.0.1/BITCHAT_SHA256SUMS.unsigned --repo permissionlesstech/bitchat-android\r\ntools/reproducible-builds/build-in-container.sh .reproducible-build/verify-v2.0.1\r\ncmp .reproducible-build/verify-v2.0.1/SHA256SUMS.unsigned .reproducible-build/release-metadata-v2.0.1/BITCHAT_SHA256SUMS.unsigned\r\n```\r\n\r\nTo verify the checksums of the published signed files without rebuilding:\r\n\r\n```bash\r\ngh release download v2.0.1 --dir .reproducible-build/download-v2.0.1\r\n(cd .reproducible-build/download-v2.0.1 && shasum -a 256 -c BITCHAT_SHA256SUMS)\r\n```\r\n\r\nMost phones should use `bitchat-android-universal.apk`; `bitchat-android-arm64.apk` is a smaller download for modern ARM64 phones. Install `bitchat-android-wear.apk` directly on a Wear OS device. The Play upload bundles are signed separately for Google Play and are not intended for direct installation.\r\n\r\n**Full changelog:** https://github.com/permissionlesstech/bitchat-android/compare/1.7.4...v2.0.1\r\n",
+      "assets": [
+        {
+          "filename": "bitchat-android-arm64.apk",
+          "abi": "arm64-v8a",
+          "size_bytes": 19977772,
+          "sha256": "f4de7ee3236e1704f1091375e760c416a5dfb8aec0e06130e5d97fdc0a88d69f",
+          "mirrored": true,
+          "url": "https://pub-1c78deb4bb3b40fabe85c934017966a1.r2.dev/apk/v2.0.1/bitchat-android-arm64.apk",
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/v2.0.1/bitchat-android-arm64.apk"
+        },
+        {
+          "filename": "bitchat-android-universal.apk",
+          "abi": "universal",
+          "size_bytes": 51911404,
+          "sha256": "fc0c833616fbc2a7bf4b85710f21b9d77d0cdfc87d3dfe6a85e3c919406eff85",
+          "mirrored": true,
+          "url": "https://pub-1c78deb4bb3b40fabe85c934017966a1.r2.dev/apk/v2.0.1/bitchat-android-universal.apk",
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/v2.0.1/bitchat-android-universal.apk"
+        },
+        {
+          "filename": "bitchat-android-wear.apk",
+          "abi": null,
+          "size_bytes": 4540204,
+          "sha256": "6d0d8f5d593dce0e8da51a1a053c9d0219a9b40695b8c49087dc9b85bc0d1bd2",
+          "mirrored": true,
+          "url": "https://pub-1c78deb4bb3b40fabe85c934017966a1.r2.dev/apk/v2.0.1/bitchat-android-wear.apk",
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/v2.0.1/bitchat-android-wear.apk"
+        },
+        {
+          "filename": "bitchat-android-x86_64.apk",
+          "abi": "x86_64",
+          "size_bytes": 21845533,
+          "sha256": "b78131cf362589e62d0232f0fb80f775fc0d6d76d58134f0f92589ab8c148514",
+          "mirrored": true,
+          "url": "https://pub-1c78deb4bb3b40fabe85c934017966a1.r2.dev/apk/v2.0.1/bitchat-android-x86_64.apk",
+          "upstream_url": "https://github.com/permissionlesstech/bitchat-android/releases/download/v2.0.1/bitchat-android-x86_64.apk"
+        }
+      ]
+    },
     {
       "tag": "1.7.4",
       "name": "1.7.4",
